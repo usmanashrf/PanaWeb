@@ -1,6 +1,7 @@
 'use client';
 
-import { ChakraProvider } from "@chakra-ui/react";
+import { Box, ChakraProvider } from "@chakra-ui/react";
+import FrontPage from "./components/frontPage";
 import NavBar from "./components/navBar";
 
 export default function Home() {
@@ -8,7 +9,7 @@ export default function Home() {
     
       <ChakraProvider>
        <NavBar></NavBar>
-       Hello world
+       <FrontPage></FrontPage>
       </ChakraProvider>
      
 
