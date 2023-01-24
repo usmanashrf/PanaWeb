@@ -1,3 +1,4 @@
+
 import {Box, Flex} from "@chakra-ui/react";
 import Loader from '../utils/modelLoader'
 import dynamic from "next/dynamic";
