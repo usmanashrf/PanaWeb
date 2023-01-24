@@ -17,16 +17,17 @@ export const Container = forwardRef(({ children }, ref) => (
     ref={ref}
     className="panaModel"
     m="auto"
-    mt={['-20px', '-60px', '-120px']}
-    mb={['-40px', '-140px', '-200px']}
-    w={[180, 280, 340]}
-    h={[180, 280, 340]}
+     mt={['-80px', '-120px', '-180px']}
+    // mr={['-50px', '0', '0px']}
+    // mb={['-40px', '-140px', '-200px']}
+    w={[32, 48, 64]}
+    h={[28, 48, 64]}
     position="relative"
   >
     {children}
   </Box>
 ))
-
+ 
 const Loader = () => {
   return (
     <Container>

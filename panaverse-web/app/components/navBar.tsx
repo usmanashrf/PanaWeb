@@ -19,13 +19,14 @@ import {
   Menu,
   MenuButton,
   useColorMode,
+  useColorModeValue,
   IconButton,
   MenuList,
   MenuItem,
   Button,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import MenuLogo from "./menuLogo";
+import { Show, Hide } from '@chakra-ui/react'
 import { AnimatePresence, motion } from "framer-motion";
 import { navVariants } from "../utils/motions";
 import HamburgerMenu from "../images/hamburger";
@@ -58,23 +59,43 @@ export default function NavBar() {
         <Link href="#">
           <Flex>
             {" "}
-            <Box h={"24px"}>
-              <MenuLogo></MenuLogo>
+            <Box mx={['-10','0','0']} h={["40px","50px","60px"]} width={["70px","50px","60px"]}>
+              {/* <MenuLogo></MenuLogo> */}
+              <LazyModel />
             </Box>
-            <Text
+            {/* <Text
               fontWeight="bold"
               color="white"
               mt={[4, 4, 4]}
               ml={[-2, -2, -2]}
             >
-              anaverse
-            </Text>
+            </Text> */}
           </Flex>
         </Link>
         <Flex>
-          <Text fontWeight="bold" fontSize="xl" as="i" color="white">
-            Web 3.0 & Metaverse
+          <Show above="sm">
+          <Text
+            fontWeight="bold"
+            fontSize="xl"
+            as="i"
+            color="white"
+            ml={[6, 0, 0]}
+          >
+            Panaverse
           </Text>
+          </Show>
+          <Show breakpoint='(max-width: 400px)'>
+          <Text
+            fontWeight="bold"
+            fontSize="xl"
+            as="i"
+            color="white"
+            pl={[6, 0, 0]}
+            mt={[-2,0,0]}
+          >
+            anaverse
+          </Text>
+          </Show>
         </Flex>
         {breakpoint !== "xs" && (
           <Flex align="center">
@@ -102,7 +123,6 @@ export default function NavBar() {
                 ></IconButton>
               </motion.div>
             </AnimatePresence>
-
           </Flex>
         )}
         {breakpoint === "xs" && (

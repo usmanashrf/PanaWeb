@@ -12,7 +12,7 @@ const panaverseModel = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
-  const urlGLB = '/panaverselogo2.glb';
+  const urlGLB = '/smalllogo.glb';
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer

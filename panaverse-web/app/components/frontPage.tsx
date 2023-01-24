@@ -13,7 +13,7 @@ export default function FrontPage(){
       <Box>
       <Flex > 
         </Flex>
-        <LazyModel/>
+        {/* <LazyModel/> */}
         </Box>
     )
 }
