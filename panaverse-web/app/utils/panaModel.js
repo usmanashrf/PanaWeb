@@ -12,7 +12,7 @@ const panaverseModel = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
-  const urlDogGLB = '/panaverseLogo.glb';
+  const urlGLB = '/panaverseLogo.glb';
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer
@@ -76,7 +76,7 @@ const panaverseModel = () => {
       controls.autoRotate = true
       controls.target = target
 
-      loadGLTFModel(scene, urlDogGLB, {
+      loadGLTFModel(scene, urlGLB, {
         receiveShadow: false,
         castShadow: false
       }).then(() => {
