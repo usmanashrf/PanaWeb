@@ -6,7 +6,7 @@ import NavBar from "./components/navBar";
 export default function Home() {
   return (
     
-      <ChakraProvider>
+      <ChakraProvider cssVarsRoot={undefined}>
        <NavBar></NavBar>
        <FrontPage></FrontPage>
       </ChakraProvider>

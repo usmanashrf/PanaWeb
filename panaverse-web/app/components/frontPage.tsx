@@ -1,10 +1,10 @@
 
-import {Box, Flex} from "@chakra-ui/react";
+import {Box, Flex, Text} from "@chakra-ui/react";
 import Loader from '../utils/modelLoader'
 import dynamic from "next/dynamic";
 
 const LazyModel = dynamic(() => import('../utils/panaModel'), {
-  ssr: false,
+  ssr: true,
   loading: () => <Loader/>
 })
 

@@ -29,7 +29,13 @@ import MenuLogo from "./menuLogo";
 import { AnimatePresence, motion } from "framer-motion";
 import { navVariants } from "../utils/motions";
 import HamburgerMenu from "../images/hamburger";
+import dynamic from "next/dynamic";
+import Loader from "../utils/modelLoader";
 
+const LazyModel = dynamic(() => import('../utils/panaModel'), {
+  ssr: true,
+  loading: () => <Loader/>
+})
 export default function NavBar() {
   const breakpoint = useBreakpointValue({
     base: "xs",

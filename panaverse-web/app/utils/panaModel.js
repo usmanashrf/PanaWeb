@@ -12,7 +12,7 @@ const panaverseModel = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
-  const urlGLB = '/panaverseLogo.glb';
+  const urlGLB = '/panaverselogo2.glb';
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer
@@ -45,9 +45,9 @@ const panaverseModel = () => {
 
       const target = new THREE.Vector3(-0.5, 1.2, 0)
       const initialCameraPosition = new THREE.Vector3(
-        20 * Math.sin(0.2 * Math.PI),
-        10,
-        20 * Math.cos(0.2 * Math.PI)
+        -100 * Math.sin(0.5 * Math.PI),
+        500,
+        -100 * Math.cos(0.5 * Math.PI)
       )
 
       // 640 -> 240
@@ -59,7 +59,7 @@ const panaverseModel = () => {
         scale,
         -scale,
         0.01,
-        50000
+        20000
       )
       camera.position.copy(initialCameraPosition)
       camera.lookAt(target)
@@ -69,9 +69,9 @@ const panaverseModel = () => {
 
       let light = new THREE.DirectionalLight(0xffffff, 1);
     // Set the position of the light
-    light.position.set(1, 1, 1);
+      light.position.set(1, 1, 1);
     // Add the light to the scene
-    scene.add(light);
+      scene.add(light);
       const controls = new OrbitControls(camera, renderer.domElement)
       controls.autoRotate = true
       controls.target = target
@@ -93,10 +93,10 @@ const panaverseModel = () => {
 
         if (frame <= 100) {
           const p = initialCameraPosition
-          const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20
+          const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 5
 
-          camera.position.y = 10
-          camera.position.x =
+           camera.position.y = 10
+           camera.position.x =
             p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed)
           camera.position.z =
             p.z * Math.cos(rotSpeed) - p.x * Math.sin(rotSpeed)
