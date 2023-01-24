@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { slideIn, staggerContainer, textVariant } from "../utils/motions";
-import {Box, Flex, Text, Image} from "@chakra-ui/react";
+import {Box, Flex, Text, Image,  useColorModeValue} from "@chakra-ui/react";
 import Loader from '../utils/modelLoader'
 import dynamic from "next/dynamic";
 const LazyModel = dynamic(() => import('../utils/panaModel'), {
@@ -33,7 +33,7 @@ export default function FrontPage(){
         className="relative w-full md:-mt-[20px] -mt-[12px]"
       >
         <Image
-          src="/fithead.png"
+          src={useColorModeValue("/lightModeHead.png","/fithead.png")}
           alt="front_cover"
           className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
         />
