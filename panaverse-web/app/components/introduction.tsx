@@ -15,7 +15,7 @@ export default function Intro(){
             <HStack>
             <Show above="md"> <LazyModel ></LazyModel></Show>
             <motion.nav variants={introVariants} initial="hidden" whileInView="show">
-            <VStack  mt={["0","20px","40px"]}>
+            <VStack  mt={["0","20px","40px"]} >
             <Text  fontSize={["40px","35px","45px"]} fontWeight="bold"  align="center">
             The Panaverse Community</Text> 
             <Text align="center">

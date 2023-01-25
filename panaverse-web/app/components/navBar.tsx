@@ -59,7 +59,7 @@ export default function NavBar() {
         <Link href="#">
           <Flex>
             {" "}
-            <Box mx={['-10','0','0']} h={["40px","50px","60px"]} width={["70px","50px","60px"]}>
+            <Box  mx={['-10','0','0']} h={["40px","50px","60px"]} width={["70px","50px","60px"]}>
               <MenuLogo></MenuLogo>
 
               {/* <LazyModel /> */}
@@ -102,7 +102,7 @@ export default function NavBar() {
         {breakpoint !== "xs" && (
           <Flex align="center">
             <Link href="#" mr={4}>
-              <Text color={useColorModeValue("gray.800", "white")}>About</Text>
+              <Text  color={useColorModeValue("gray.800", "white")}>About</Text>
             </Link>
             <Link href="#" mr={4}>
               <Text color={useColorModeValue("gray.800", "white")}>Contact</Text>

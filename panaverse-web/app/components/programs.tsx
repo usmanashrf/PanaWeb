@@ -16,7 +16,7 @@ export default function Programs(){
         <Flex direction={["column", "column", "row"]} bg={useColorModeValue("white.100", "gray.800")}>
         <motion.nav variants={qtr1Variants} initial="hidden" whileInView="show">
          <Card  maxW="sm" mt="30px"
-          alignItems="center" ml="25px" mx="10px" >
+          alignItems="center" ml="25px" mx="10px"  boxShadow='dark-lg'>
             <CardBody>
               <Image
                 src="/qtr1.png"
@@ -32,7 +32,6 @@ export default function Programs(){
             </CardBody>
             <Divider />
             <CardFooter>
-             
                 <Button variant="ghost" colorScheme="blue">
                   See more..
                 </Button>
@@ -42,7 +41,7 @@ export default function Programs(){
           </motion.nav>
           <motion.nav variants={qtr2Variants} initial="hidden" whileInView="show">
           <Card mt="30px"
-           alignItems="center" ml="25px" mx="10px" maxW="sm">
+           alignItems="center" ml="25px" mx="10px" maxW="sm" boxShadow='dark-lg'>
             <CardBody>
               <Image
                 src="/qt2.png"
@@ -72,7 +71,7 @@ export default function Programs(){
           </motion.nav>
           <motion.nav variants={qtr3Variants} initial="hidden" whileInView="show">
           <Card  mt="30px"
-           alignItems="center" ml="25px" mx="10px" maxW="sm">
+           alignItems="center" ml="25px" mx="10px" maxW="sm" boxShadow='dark-lg'>
             <CardBody >
               <Image
                 src="/qtr3.png"
@@ -100,7 +99,7 @@ export default function Programs(){
           </motion.nav>
           <motion.nav variants={qtr4Variants} initial="hidden" whileInView="show">
           <Card   mt="30px"
-           alignItems="center" ml="25px" mx="10px" maxW="sm">
+           alignItems="center" ml="25px" mx="10px" maxW="sm" boxShadow='dark-lg'>
             <CardBody>
               <Image
                 src="/q4.png"
