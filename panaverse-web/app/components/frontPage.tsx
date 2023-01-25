@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { slideIn, staggerContainer, textVariant } from "../utils/motions";
-import {Box, Flex, Text, Image,  useColorModeValue} from "@chakra-ui/react";
+import {Box, Flex, Text, Image,  useColorModeValue, Button, Show, Hide} from "@chakra-ui/react";
 import Loader from '../utils/modelLoader'
 import dynamic from "next/dynamic";
 const LazyModel = dynamic(() => import('../utils/panaModel'), {
@@ -13,31 +13,45 @@ const LazyModel = dynamic(() => import('../utils/panaModel'), {
 export default function FrontPage(){
     return(
       <Box bg={useColorModeValue("gray.100", "gray.800")}>
-      <Flex > 
-        <Flex mt={["25px","25px","115px"]} ml={["25px","25px","115px"]}>
+      <Flex> 
+      {/* <motion.div
+      initial={{ x: -100 }}
+      animate={{ x: 0 }}
+      transition={{ duration: 1 }}
+      ml="-20px"
+    >
+      <Image src="plntball.png"></Image>
+    </motion.div> */}
+    <Flex mt={["25px","25px","115px"]} ml={["-20","25px","50px"]} w="30%">
       <motion.div
-          variants={textVariant(1.2)}
-          className="flex flex-row justify-center items-center"
+       style={{ x: 0 }} animate={{ x: 100 }}
         >
-        <Text mt="5px" ml="20px" fontSize={["20px","35px","50px"]} fontWeight="bold">Certified Web 3.0 
-       </Text>
-        <Text  ml="-10px" color="red" fontSize={["20px","35px","50px"]} fontWeight="bold" align="center"> 
-        &
-        </Text>
-        <Text ml="20px" fontSize={["20px","35px","50px"]}fontWeight="bold">
-        Metaverse Developer</Text>
+        <Text mt="5px" fontSize={["20px","35px","45px"]} fontWeight="bold">
+        Web3, Metaverse 3D, AI, IoT</Text> 
+       <Text fontSize={["15px","15px","28px"]} fontWeight="bold" color="#E41B17">  Earn as you Learn Program </Text>
+       <Hide below="md"><Text>Getting Ready for the Next Generation of the Internet</Text></Hide>
+       <motion.div
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.8 }}
+        style={{ x: 100 }}
+        alignItems="left"
+      >
+       <Button ml={["-100px","-100px","-100px"]} mt="20px" bg="#2B6CB0" color="white" _hover={{ bg: "gray.500" }}> Apply Now</Button>
+       </motion.div>
         </motion.div>
         </Flex>
+        <Flex ml={["-25px","0","0"]}>
       <motion.div
-        variants={slideIn('right', 'tween', 0.6, 1)}
-        className="relative w-full md:-mt-[20px] -mt-[12px]"
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.8 }}
+        style={{ x: 100 }}
       >
         <Image
           src={useColorModeValue("/lightModeHead.png","/fithead.png")}
           alt="front_cover"
-          className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
         />
       </motion.div>
+      </Flex>
         </Flex>
         </Box>
     )
