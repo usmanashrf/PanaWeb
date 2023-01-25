@@ -73,10 +73,11 @@ export default function FrontPage(){
               whileTap={{ scale: 0.8 }}
               style={{ x: 100 }}
             >
-              <Image
+              {/* <Image
                 src={useColorModeValue("/lightModeHead.png", "/fithead.png")}
                 alt="front_cover"
-              />
+              /> */}
+              <Image src="frontpic.png"></Image>
             </motion.div>
           </Flex>
         </Flex>
