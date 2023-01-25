@@ -16,13 +16,13 @@ export const Container = forwardRef(({ children }, ref) => (
   <Box
     ref={ref}
     className="panaModel"
-    m="auto"
-     mt={['-80px', '-120px', '-180px']}
+   // m="auto"
+     mt={['-180px', '-220px', '-180px']}
     // mr={['-50px', '0', '0px']}
     // mb={['-40px', '-140px', '-200px']}
-    w={[32, 48, 64]}
-    h={[28, 48, 64]}
-    position="relative"
+    w={[220, 380, 440]}
+    h={[220, 380, 440]}
+    //position="relative"
   >
     {children}
   </Box>
