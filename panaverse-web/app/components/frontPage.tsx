@@ -77,7 +77,8 @@ export default function FrontPage(){
                 src={useColorModeValue("/lightModeHead.png", "/fithead.png")}
                 alt="front_cover"
               /> */}
-              <Image src="frontpic.png"></Image>
+              <Show above='sm'> <Image src="desktopPic.png"></Image></Show>
+              <Show below='md'> <Image src="mobilePic.png"></Image></Show>
             </motion.div>
           </Flex>
         </Flex>
