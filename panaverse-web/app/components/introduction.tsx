@@ -13,7 +13,9 @@ export default function Intro(){
         <Box mt="100px" h="absolute" bgColor="grey:300" mb="60px">
         <Flex>
             <HStack>
-            <Show above="md"> <LazyModel ></LazyModel></Show>
+            
+            <Show above="md"> <LazyModel w="1/3"></LazyModel></Show>
+            <Image  w="2/3" src="/community.png"></Image>
             <motion.nav variants={introVariants} initial="hidden" whileInView="show">
             <VStack  mt={["0","20px","40px"]} >
             <Text  fontSize={["40px","35px","45px"]} fontWeight="bold"  align="center">

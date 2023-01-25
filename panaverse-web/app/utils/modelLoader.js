@@ -20,9 +20,11 @@ export const Container = forwardRef(({ children }, ref) => (
      mt={['-180px', '-220px', '-180px']}
     // mr={['-50px', '0', '0px']}
     // mb={['-40px', '-140px', '-200px']}
-    w={[220, 380, 440]}
-    h={[220, 380, 440]}
+    // w={[220, 380, 380]}
+    // h={[220, 380, 440]}
     //position="relative"
+    w={[100, 100, 100]}
+    h={[220, 380, 440]}
   >
     {children}
   </Box>
