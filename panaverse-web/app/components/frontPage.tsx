@@ -12,7 +12,7 @@ const LazyModel = dynamic(() => import('../utils/panaModel'), {
 
 export default function FrontPage(){
     return(
-      <Box bg={useColorModeValue("gray.100", "gray.800")}>
+      <Box bg={useColorModeValue("gray.100", "gray.700")}>
       <Flex> 
       {/* <motion.div
       initial={{ x: -100 }}

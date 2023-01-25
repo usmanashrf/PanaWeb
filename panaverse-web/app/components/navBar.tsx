@@ -61,7 +61,7 @@ export default function NavBar() {
             {" "}
             <Box mx={['-10','0','0']} h={["40px","50px","60px"]} width={["70px","50px","60px"]}>
               <MenuLogo></MenuLogo>
-              
+
               {/* <LazyModel /> */}
             </Box>
             <Text
