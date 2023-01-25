@@ -23,7 +23,7 @@ export const Container = forwardRef(({ children }, ref) => (
     // w={[220, 380, 380]}
     // h={[220, 380, 440]}
     //position="relative"
-    w={[100, 100, 100]}
+    w={[220, 380, 280]}
     h={[220, 380, 440]}
   >
     {children}

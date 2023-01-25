@@ -14,8 +14,15 @@ export default function Intro(){
         <Flex>
             <HStack>
             
-            <Show above="md"> <LazyModel w="1/3"></LazyModel></Show>
-            <Image  w="2/3" src="/community.png"></Image>
+            {/* <Show above="md"> <LazyModel position="relative"></LazyModel> 
+            <Image position="relative" src="/community.png"></Image></Show> */}
+            {/* <Show below="md"> */}
+            <VStack>
+            <LazyModel/> 
+            <Image position="relative" src="/community.png"></Image>
+            </VStack>
+            {/* </Show> */}
+            
             <motion.nav variants={introVariants} initial="hidden" whileInView="show">
             <VStack  mt={["0","20px","40px"]} >
             <Text  fontSize={["40px","35px","45px"]} fontWeight="bold"  align="center">
