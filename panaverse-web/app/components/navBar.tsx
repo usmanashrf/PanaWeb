@@ -51,7 +51,7 @@ export default function NavBar() {
         as="nav"
         align="center"
         justify="space-between"
-        bg="gray.800"
+        bg={useColorModeValue("white.100", "gray.800")}
         overflow="hidden"
         p={4}
         px={[16, 6, 6]}
@@ -60,20 +60,22 @@ export default function NavBar() {
           <Flex>
             {" "}
             <Box mx={['-10','0','0']} h={["40px","50px","60px"]} width={["70px","50px","60px"]}>
-              {/* <MenuLogo></MenuLogo> */}
-              <LazyModel />
+              <MenuLogo></MenuLogo>
+              
+              {/* <LazyModel /> */}
             </Box>
-            {/* <Text
+            <Text
               fontWeight="bold"
-              color="white"
+              color={useColorModeValue("gray.800", "white")}
               mt={[4, 4, 4]}
-              ml={[-2, -2, -2]}
+              ml={[0, -4, -6]}
             >
-            </Text> */}
+              anaverse
+            </Text>
           </Flex>
         </Link>
         <Flex>
-          <Show above="sm">
+          {/* <Show above="sm">
           <Text
             fontWeight="bold"
             fontSize="xl"
@@ -83,8 +85,8 @@ export default function NavBar() {
           >
             Panaverse
           </Text>
-          </Show>
-          <Show breakpoint='(max-width: 400px)'>
+          </Show> */}
+          {/* <Show breakpoint='(max-width: 400px)'>
           <Text
             fontWeight="bold"
             fontSize="xl"
@@ -95,15 +97,15 @@ export default function NavBar() {
           >
             anaverse
           </Text>
-          </Show>
+          </Show> */}
         </Flex>
         {breakpoint !== "xs" && (
           <Flex align="center">
             <Link href="#" mr={4}>
-              <Text color="white">About</Text>
+              <Text color={useColorModeValue("gray.800", "white")}>About</Text>
             </Link>
             <Link href="#" mr={4}>
-              <Text color="white">Contact</Text>
+              <Text color={useColorModeValue("gray.800", "white")}>Contact</Text>
             </Link>
             <AnimatePresence exitBeforeEnter initial={false}>
               <motion.div
@@ -130,10 +132,8 @@ export default function NavBar() {
             <MenuButton
               as={IconButton}
               aria-label="Options"
-              //    icon={<HamburgerIcon />}
               icon={<HamburgerMenu></HamburgerMenu>}
-              //variant='outline'
-              bg="greu.500"
+              bg={useColorModeValue("gray.500", "greu.500")}
               _hover={{ bg: "gray.500" }}
             />
             <MenuList>
@@ -142,6 +142,9 @@ export default function NavBar() {
               </MenuItem>
               <MenuItem icon={<PhoneIcon />} command="⌘O">
                 Contact
+              </MenuItem>
+              <MenuItem onClick={toggleColorMode} icon={useColorModeValue(<MoonIcon />, <SunIcon />)} command="⌘O">
+              {useColorModeValue("Dark", "Light")}
               </MenuItem>
             </MenuList>
           </Menu>

@@ -12,7 +12,7 @@ const LazyModel = dynamic(() => import('../utils/panaModel'), {
 
 export default function FrontPage(){
     return(
-      <Box>
+      <Box bg={useColorModeValue("gray.100", "gray.800")}>
       <Flex > 
         <Flex mt={["25px","25px","115px"]} ml={["25px","25px","115px"]}>
       <motion.div
@@ -29,7 +29,7 @@ export default function FrontPage(){
         </motion.div>
         </Flex>
       <motion.div
-        variants={slideIn('right', 'tween', 0.2, 1)}
+        variants={slideIn('right', 'tween', 0.6, 1)}
         className="relative w-full md:-mt-[20px] -mt-[12px]"
       >
         <Image
@@ -39,7 +39,6 @@ export default function FrontPage(){
         />
       </motion.div>
         </Flex>
-        {/* <LazyModel/> */}
         </Box>
     )
 }
