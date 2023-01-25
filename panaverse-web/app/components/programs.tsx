@@ -16,16 +16,16 @@ export default function Programs(){
         <Flex direction={["column", "column", "row"]} bg={useColorModeValue("white.100", "gray.800")}>
         <motion.nav variants={qtr1Variants} initial="hidden" whileInView="show">
          <Card  maxW="sm" mt="30px"
-          align="center" ml="25px" mx="10px" >
-            <CardBody align="center">
+          alignItems="center" ml="25px" mx="10px" >
+            <CardBody>
               <Image
                 src="/qtr1.png"
                 alt="First Quarter"
                 borderRadius="lg"  
               /> 
               <Stack mt="6" spacing="3">
-                <Heading size="md" align="center">Quarter I</Heading>
-                <Text align="center">
+                <Heading size="md" alignItems="center">Quarter I</Heading>
+                <Text alignItems="center">
                 CS-101: Object-Oriented Programming using TypeScript
                 </Text>
               </Stack>
@@ -42,8 +42,8 @@ export default function Programs(){
           </motion.nav>
           <motion.nav variants={qtr2Variants} initial="hidden" whileInView="show">
           <Card mt="30px"
-          align="center" ml="25px" mx="10px" maxW="sm">
-            <CardBody align="center">
+           alignItems="center" ml="25px" mx="10px" maxW="sm">
+            <CardBody>
               <Image
                 src="/qt2.png"
                 alt="First Quarter"
@@ -51,11 +51,11 @@ export default function Programs(){
                 
               /> 
               <Stack mt="6" spacing="3">
-                <Heading size="md" align="center">Quarter II</Heading>
-                <Text align="center">
+                <Heading size="md" alignItems="center">Quarter II</Heading>
+                <Text alignItems="center">
                 Developing Planet-Scale Web 2.0 Serverless Cloud Cloud Apps and APIs
                 </Text>
-                <Text align="center">
+                <Text alignItems="center">
                  using Next.js 13
                 </Text>
               </Stack>
@@ -72,18 +72,18 @@ export default function Programs(){
           </motion.nav>
           <motion.nav variants={qtr3Variants} initial="hidden" whileInView="show">
           <Card  mt="30px"
-          align="center" ml="25px" mx="10px" maxW="sm">
-            <CardBody align="center">
+           alignItems="center" ml="25px" mx="10px" maxW="sm">
+            <CardBody >
               <Image
                 src="/qtr3.png"
                 alt="First Quarter"
               /> 
               <Stack mt="6" spacing="3">
-                <Heading size="md" align="center">Quarter III</Heading>
-                <Text align="center">
+                <Heading size="md" alignItems="center">Quarter III</Heading>
+                <Text alignItems="center">
                 Developing Planet-Scale Web 2.0 Serverless Cloud Cloud Apps and APIs
                 </Text>
-                <Text align="center">
+                <Text alignItems="center">
                  using Next.js 13
                 </Text>
               </Stack>
@@ -100,23 +100,22 @@ export default function Programs(){
           </motion.nav>
           <motion.nav variants={qtr4Variants} initial="hidden" whileInView="show">
           <Card   mt="30px"
-          align="center" ml="25px" mx="10px" maxW="sm">
-            <CardBody align="center">
+           alignItems="center" ml="25px" mx="10px" maxW="sm">
+            <CardBody>
               <Image
                 src="/q4.png"
                 alt="First Quarter"
                 borderRadius="lg"
-                
               /> 
               <Stack mt="6" spacing="3">
-                <Heading size="md" align="center">Quarter IV (Specialized)</Heading>
-                <Text align="center" fontWeight="bold">
+                <Heading size="md" alignItems="center">Quarter IV (Specialized)</Heading>
+                <Text alignItems="center" fontWeight="bold">
                 
                 </Text>
-                <Text align="center">
+                <Text alignItems="center">
                 Web 3.0 & Metaverse Specialization
                 </Text>
-                <Text align="center">
+                <Text alignItems="center">
                 AI, Cloud-Native, IoT
                 </Text>
               </Stack>

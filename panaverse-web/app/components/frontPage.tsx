@@ -34,7 +34,6 @@ export default function FrontPage(){
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.8 }}
         style={{ x: 100 }}
-        alignItems="left"
       >
        <Button ml={["-100px","-100px","-100px"]} mt="20px" bg="#2B6CB0" color="white" _hover={{ bg: "gray.500" }}> Apply Now</Button>
        </motion.div>
