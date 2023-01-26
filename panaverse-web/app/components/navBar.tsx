@@ -138,7 +138,7 @@ export default function NavBar() {
               _hover={{ bg: "gray.500" }}
             />
             <MenuList>
-              <MenuItem icon={<InfoIcon />}  onClick="/Intro">
+              <MenuItem icon={<InfoIcon />}>
                 About
               </MenuItem>
               <MenuItem icon={<PhoneIcon />} command="⌘O">

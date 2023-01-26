@@ -5,7 +5,7 @@ import SocialMediaIcons from "./socialMediaIcons";
 let year = new Date().getFullYear();
 export default function Footer(){
     return(
-<Box bg="gray.700" color="white" position="relative" p="10px" h="350px" spacing="20px">
+<Box bg="gray.700" color="white" position="relative" p="10px" h="350px">
 <Grid
   h='200px'
   templateRows='repeat(2, 1fr)'
@@ -18,7 +18,7 @@ export default function Footer(){
 <Text  align={["justify"]} maxW={"sm"}>
 The mission of PIAIC and Panaverse is to reshape Pakistan by revolutionizing education, research, and business by adopting latest, cutting-edge technologies.
 </Text>
-<Text mt="20px" justify={["center","left","left"]}>© {year} Usman Ashraf. All rights reserved.</Text>
+<Text mt="20px">© {year} Usman Ashraf. All rights reserved.</Text>
 </VStack></GridItem>
   <GridItem colSpan={2}/>
   
@@ -42,12 +42,12 @@ The mission of PIAIC and Panaverse is to reshape Pakistan by revolutionizing edu
 
 </Stack>
   </GridItem>
-  <GridItem colSpan={["1","2"]} ml={["-50px","0px","0"]}>
+  <GridItem colSpan={[1,2]} ml={["-50px","0px","0"]}>
     <Show below="md">
     <SocialMediaIcons></SocialMediaIcons>
     </Show>
   </GridItem>
-  <GridItem align="right"> 
+  <GridItem> 
   <Show above="sm">
     <SocialMediaIcons></SocialMediaIcons>
     </Show>
