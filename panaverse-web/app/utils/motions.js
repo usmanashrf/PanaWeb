@@ -54,7 +54,7 @@ export const navVariants = {
       transition: {
         type: 'spring',
         stiffness: 80,
-        delay: 1.8,
+        delay: 1.5,
       },
     },
   };
@@ -75,7 +75,7 @@ export const navVariants = {
       transition: {
         type: 'spring',
         stiffness: 80,
-        delay: 2,
+        delay: 1.6,
       },
     },
   };
@@ -95,7 +95,7 @@ export const navVariants = {
       transition: {
         type: 'spring',
         stiffness: 80,
-        delay: 2.2,
+        delay: 1.8,
       },
     },
   };
@@ -115,7 +115,7 @@ export const navVariants = {
       transition: {
         type: 'spring',
         stiffness: 80,
-        delay: 2.4,
+        delay: 2,
       },
     },
   };
@@ -159,3 +159,4 @@ export const navVariants = {
       },
     },
   });
+  

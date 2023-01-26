@@ -32,6 +32,7 @@ import { navVariants } from "../utils/motions";
 import HamburgerMenu from "../images/hamburger";
 import dynamic from "next/dynamic";
 import Loader from "../utils/modelLoader";
+import Intro from "./introduction";
 
 const LazyModel = dynamic(() => import('../utils/panaModel'), {
   ssr: true,
@@ -137,7 +138,7 @@ export default function NavBar() {
               _hover={{ bg: "gray.500" }}
             />
             <MenuList>
-              <MenuItem icon={<InfoIcon />} command="⌘O">
+              <MenuItem icon={<InfoIcon />}  onClick="/Intro">
                 About
               </MenuItem>
               <MenuItem icon={<PhoneIcon />} command="⌘O">

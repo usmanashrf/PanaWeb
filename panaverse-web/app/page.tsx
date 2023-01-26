@@ -5,6 +5,7 @@ import NavBar from "./components/navBar";
 import Intro from "./components/introduction"
 import Programs from "./components/programs";
 import theme from "./utils/theme";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
        <Intro></Intro>
        <Divider />
        <Programs></Programs>
+       <Footer></Footer>
       </ChakraProvider>
      
 

@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 export default function Programs(){
     return (
-      <Box margin={"auto"} mt="150px" w="75%">
+      <Box margin={"auto"} mt="150px" w="75%" mb="80px">
         <Text fontSize={["40px","35px","45px"]} fontWeight="bold" align="center">Program of Studies</Text>
         <Text  align="center">The first three quarters are shared by all specialties and are dedicated to studying </Text>
         <Text align="center">Object-Oriented Programming and cutting-edge Full-Stack Web 2.0 development</Text>
