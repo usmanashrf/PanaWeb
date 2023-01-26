@@ -5,20 +5,19 @@ import SocialMediaIcons from "./socialMediaIcons";
 let year = new Date().getFullYear();
 export default function Footer(){
     return(
-<Box bg="gray.700" color="white" position="relative" p="10px" h="350px">
+<Box bg="gray.700" color="white" p="10px">
 <Grid
-  h='200px'
   templateRows='repeat(2, 1fr)'
   templateColumns='repeat(5, 1fr)'
   gap={4}
->
+> 
   <GridItem rowSpan={2} colSpan={1}>
     <VStack alignItems="left" >
-    <Image maxW="200px" h="100px" src="/footerLogoWhite.png"></Image>
+    <Image maxW="180px" h="60px" src="/footerLogoWhite.png"></Image>
 <Text  align={["justify"]} maxW={"sm"}>
-The mission of PIAIC and Panaverse is to reshape Pakistan by revolutionizing education, research, and business by adopting latest, cutting-edge technologies.
+Reshape Pakistan by cutting-edge technologies.
 </Text>
-<Text mt="20px">© {year} Usman Ashraf. All rights reserved.</Text>
+<Text mx="20px" mt="20px">© {year} Usman Ashraf. All rights reserved.</Text>
 </VStack></GridItem>
   <GridItem colSpan={2}/>
   

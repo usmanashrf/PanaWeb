@@ -18,6 +18,27 @@ export const navVariants = {
       },
     },
   };
+  export const cardsVariants = {
+    hidden: {
+      opacity: 0,
+      x: 0,
+      
+      transition: {
+        type: 'spring',
+        stiffness: 300,
+        damping: 140,
+      },
+    },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: 'spring',
+        stiffness: 80,
+        delay: 0.5,
+      },
+    },
+  };
   export const introVariants = {
     hidden: {
       opacity: 0,
@@ -54,7 +75,7 @@ export const navVariants = {
       transition: {
         type: 'spring',
         stiffness: 80,
-        delay: 1.5,
+        delay: 0.9,
       },
     },
   };
@@ -75,7 +96,7 @@ export const navVariants = {
       transition: {
         type: 'spring',
         stiffness: 80,
-        delay: 1.6,
+        delay: 1,
       },
     },
   };
@@ -95,7 +116,7 @@ export const navVariants = {
       transition: {
         type: 'spring',
         stiffness: 80,
-        delay: 1.8,
+        delay: 1.1,
       },
     },
   };
@@ -115,7 +136,7 @@ export const navVariants = {
       transition: {
         type: 'spring',
         stiffness: 80,
-        delay: 2,
+        delay: 1.1,
       },
     },
   };

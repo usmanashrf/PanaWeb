@@ -6,6 +6,8 @@ import Intro from "./components/introduction"
 import Programs from "./components/programs";
 import theme from "./utils/theme";
 import Footer from "./components/Footer";
+import Cities from "./components/operationalCities";
+import Mission from "./components/mission";
 
 export default function Home() {
   return (
@@ -16,7 +18,11 @@ export default function Home() {
        <Intro></Intro>
        <Divider />
        <Programs></Programs>
+       <Cities></Cities>
+       <Mission></Mission>
+       <Divider/>
        <Footer></Footer>
+       
       </ChakraProvider>
      
 

@@ -11,7 +11,7 @@ const LazyModel = dynamic(() => import('../utils/panaModel'), {
 export default function Intro(){
     return(
         <Box mt="100px" h="absolute" bgColor="grey:300" mb="60px">
-        <Flex justify="space-between" direction={["column","column", "row"]}>
+        <Flex justify="space-between" mx={["0","150px"]}  direction={["column","column", "row"]}>
             {/* <HStack > */}
             
             {/* <Show above="md"> <LazyModel position="relative"></LazyModel> 
@@ -24,8 +24,8 @@ export default function Intro(){
             {/* </Show> */}
             
             <motion.nav variants={introVariants} initial="hidden" whileInView="show">
-            <VStack  mt={["0","20px","40px"]} mr="150px">
-            <Text  fontSize={["40px","35px","45px"]} fontWeight="bold"  maxW="md" >
+            <VStack  mt={["0","20px","40px"]} mr={["0","150px"]}>
+            <Text  fontSize={["20px","35px","45px"]} fontWeight="bold"  maxW="md" >
             The Panaverse Community</Text> 
             <Text align={["justify"]} ml={['10px']} maxW={["sm","md","md"]} >
             Web3, 3D Metaverse, AI, IoT, Cloud, and Edge technologies expand the internet as we know it
