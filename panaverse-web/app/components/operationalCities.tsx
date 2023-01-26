@@ -14,6 +14,7 @@ import {
   Grid,
   GridItem,
   Show,
+  useColorModeValue
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { cardsVariants } from "../utils/motions";
@@ -22,7 +23,7 @@ export default function Cities() {
   return (
     <Box position={"relative"} mb="400px">
         <Divider></Divider>
-    <Text my="20px" fontSize={["40px","35px","45px"]} fontWeight="bold" align={"center"}>Operational Cities</Text>
+    <Text my="40px" fontSize={["40px","35px","45px"]} fontWeight="bold" textColor={useColorModeValue("blue.600", "blue.300")} >Operational Cities</Text>
       <VStack alignItems="left"  direction={"row"}>
       <Grid templateColumns='repeat(2, 1fr)' gap={6}>
   <GridItem w='100%'>

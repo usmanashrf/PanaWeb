@@ -102,7 +102,7 @@ export default function NavBar() {
         </Flex>
         {breakpoint !== "xs" && (
           <Flex align="center">
-            <Link href="#" mr={4}>
+            <Link href="/about" mr={4}>
               <Text  color={useColorModeValue("gray.800", "white")}>About</Text>
             </Link>
             <Link href="#" mr={4}>

@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { slideIn, staggerContainer, textVariant } from "../utils/motions";
+import { fadeIn, slideIn, staggerContainer, textVariant } from "../utils/motions";
 import {Box, Flex, Text, Image,  useColorModeValue, Button, Show, Hide, Card, CardBody} from "@chakra-ui/react";
 import Loader from '../utils/modelLoader'
 import dynamic from "next/dynamic";
@@ -28,7 +28,7 @@ export default function FrontPage(){
             ml={["-20", "25px", "50px"]}
             w="30%"
           >
-            <motion.div style={{ x: 0 }} animate={{ x: 100 }}>
+            <motion.div style={{ x: 50 }} animate={{ x: 100 }}>
               <Text
                 mt="5px"
                 fontSize={["20px", "35px", "45px"]}
@@ -68,18 +68,24 @@ export default function FrontPage(){
             </motion.div>
           </Flex>
           <Flex ml={["-25px", "0", "0"]}>
+          
             <motion.div
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.8 }}
               style={{ x: 100 }}
             >
-              {/* <Image
-                src={useColorModeValue("/lightModeHead.png", "/fithead.png")}
-                alt="front_cover"
-              /> */}
-              <Show above='sm'> <Image  src="desktopPic.png"></Image></Show>
+              <div>
+              <Show above='sm'>
+              <motion.div
+        variants={slideIn('right', 'tween', 0.2, 1)}
+        className="relative w-full md:-mt-[20px] -mt-[12px]"
+      > <Image  src="desktopPic.png"></Image>
+      </motion.div>
+      </Show>
               <Show below='md'> <Image src="mobilePic.png"></Image></Show>
+              </div>
             </motion.div>
+            
           </Flex>
         </Flex>
       </Box>

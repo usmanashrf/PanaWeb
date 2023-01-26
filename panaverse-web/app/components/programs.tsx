@@ -1,17 +1,20 @@
 import {Box, Flex, Text, Image,  useColorModeValue, Button, Show, Hide, VStack, HStack, Card, CardBody, Stack, Heading, Divider, CardFooter, ButtonGroup} from "@chakra-ui/react";
-import { qtr1Variants,qtr2Variants, qtr3Variants, qtr4Variants } from "../utils/motions";
+import { fadeIn, introVariants, qtr1Variants,qtr2Variants, qtr3Variants, qtr4Variants } from "../utils/motions";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default function Programs(){
     return (
       <Box margin={"auto"} mt="150px" w="75%" mb="80px">
-        <Text fontSize={["40px","35px","45px"]} fontWeight="bold" align="center">Program of Studies</Text>
+        <motion.nav variants={introVariants} initial="hidden" whileInView="show">
+       
+        <Text fontSize={["40px","35px","45px"]} fontWeight="bold" textColor={useColorModeValue("blue.600", "blue.300")} align="center">Program of Studies</Text>
         <Text  align="center">The first three quarters are shared by all specialties and are dedicated to studying </Text>
         <Text align="center">Object-Oriented Programming and cutting-edge Full-Stack Web 2.0 development</Text>
         <Text align="center">The graduates of this program will own products (Full-Stack App Templates, AR and VR Experiences, and APIs) </Text>
         <Text align="center"> that are marketed globally by the Panaverse DAO and, if they like, will also be able to start off</Text>
         <Text align="center"> by offering services at a rate of $50 per hour ($96,000 per year).</Text>
         
+        </motion.nav>
        
         <Flex direction={["column", "column", "row"]} bg={useColorModeValue("white.100", "gray.800")}>
         <motion.nav variants={qtr1Variants} initial="hidden" whileInView="show">

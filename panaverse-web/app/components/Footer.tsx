@@ -13,13 +13,13 @@ export default function Footer(){
 > 
   <GridItem rowSpan={2} colSpan={1}>
     <VStack alignItems="left" >
-    <Image maxW="180px" h="60px" src="/footerLogoWhite.png"></Image>
+    <Image maxW="180px" h={["60px","100px"]} src="/footerLogoWhite.png"></Image>
 <Text  align={["justify"]} maxW={"sm"}>
 Reshape Pakistan by cutting-edge technologies.
 </Text>
 <Text mx="20px" mt="20px">© {year} Usman Ashraf. All rights reserved.</Text>
 </VStack></GridItem>
-  <GridItem colSpan={2}/>
+  <GridItem colSpan={2}></GridItem>
   
   <GridItem colSpan={2} mt="50px" ml={["-80px","0px","0"]} >
   <Stack direction={['column', 'row','row']} justify="space-between" mx={["0px","50px","100px"]} >
