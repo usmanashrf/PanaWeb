@@ -26,18 +26,22 @@ export default function Intro(){
             {/* </Show> */}
             
             <motion.nav variants={introVariants} initial="hidden" whileInView="show">
-            <VStack  mt={["0","20px","40px"]} mr={["0","150px"]}>
-            <Text  fontSize={["20px","35px","45px"]} textColor={useColorModeValue("blue.600", "blue.300")} fontWeight="bold"  maxW="md" >
-            The Panaverse Community</Text> 
-            <Text align={["justify"]} ml={['10px']} maxW={["sm","md","md"]} >
+            <VStack borderLeftRadius="50px" boxShadow='dark-lg' h="relative" pr={["0px","200vh"]} p="30px" mt={["0","20px","40px"]} mr={["0","150px"]}>
+            <Flex direction={["column","row"]} >
+            <Text  fontSize={["20px","35px","45px"]} textColor={useColorModeValue("blue.600", "blue.300")} fontWeight="bold">
+            The Panaverse Community</Text>
+            <VStack direction={["column","row"]}width={["250px","450px"]} mx="10px">
+            <Text  align={["justify","left"]} >
             Web3, 3D Metaverse, AI, IoT, Cloud, and Edge technologies expand the internet as we know it
             by introducing novel features and advancements.In this brand-new type of curriculum.
             In which students will learn how to make money and boost exports</Text>
-            <Text align={["justify"]} ml={['10px']} maxW={["sm","md","md"]} >
+            <Text  align={["left"]}>
             in the classroom and will begin doing so within six months of the program's beginning.
             It resembles a cross between a corporate venture and an educational project.
-           
             </Text>
+            </VStack> 
+            
+            </Flex>
             {/* <Text align="right">
             
             </Text>

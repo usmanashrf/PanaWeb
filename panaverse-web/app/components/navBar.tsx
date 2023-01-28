@@ -50,7 +50,7 @@ export default function NavBar() {
     <motion.nav variants={navVariants} initial="hidden" whileInView="show">
       <Flex
         as="nav"
-        align="center"
+        
         justify="space-between"
         bg={useColorModeValue("white.100", "gray.800")}
         overflow="hidden"
@@ -129,6 +129,7 @@ export default function NavBar() {
           </Flex>
         )}
         {breakpoint === "xs" && (
+          <Flex ml="30px">
           <Menu>
             <MenuButton
               as={IconButton}
@@ -149,6 +150,7 @@ export default function NavBar() {
               </MenuItem>
             </MenuList>
           </Menu>
+          </Flex>
         )}
       </Flex>
     </motion.nav>

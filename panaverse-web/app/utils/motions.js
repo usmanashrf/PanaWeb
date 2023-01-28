@@ -136,7 +136,7 @@ export const navVariants = {
       transition: {
         type: 'spring',
         stiffness: 80,
-        delay: 1.1,
+        delay: 1.2,
       },
     },
   };
@@ -150,7 +150,7 @@ export const navVariants = {
       opacity: 1,
       transition: {
         type: 'spring',
-        duration: 1.25,
+        duration: 1.3,
         delay,
       },
     },
