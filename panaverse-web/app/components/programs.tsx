@@ -1,4 +1,4 @@
-import {Box, Flex, Text, Image,  useColorModeValue, Button, Show, Hide, VStack, HStack, Card, CardBody, Stack, Heading, Divider, CardFooter, ButtonGroup} from "@chakra-ui/react";
+import {Box, Flex, Text, Image,  useColorModeValue, Button, Show, Hide, VStack, HStack, Card, CardBody, Stack, Heading, Divider, CardFooter, ButtonGroup, Link} from "@chakra-ui/react";
 import { fadeIn, introVariants, qtr1Variants,qtr2Variants, qtr3Variants, qtr4Variants } from "../utils/motions";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -35,10 +35,11 @@ export default function Programs(){
             </CardBody>
             <Divider />
             <CardFooter>
+              <Link href="/quarter1">
                 <Button variant="ghost" colorScheme="blue">
                   See more..
                 </Button>
-              
+                </Link>
             </CardFooter>
           </Card>
           </motion.nav>

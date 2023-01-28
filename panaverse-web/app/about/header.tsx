@@ -16,7 +16,7 @@ export default function AboutHeader(){
     animate={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.5 }}
   >
-            <Text boxShadow='dark-lg' align={["justify"]} mx={["10px","300px"]} my="20px" border={"2px"} p="20px">
+            <Text borderRadius={"12px"}  boxShadow='dark-lg' align={["justify"]} mx={["10px","300px"]} my="20px" border={"2px"} p="20px">
            The mission of Panaverse is to reshape Pakistan by revolutionizing education, research, and business by adopting latest, cutting-edge technologies. Experts are calling this the 4th industrial revolution. We want Pakistan to become a global hub for AI, data science, cloud native computing, edge computing, blockchain, augmented reality, and internet of things.</Text>
            </motion.div>
             </Flex>
