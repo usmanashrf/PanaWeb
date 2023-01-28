@@ -57,7 +57,7 @@ export default function NavBar() {
         p={4}
         px={[16, 6, 6]}
       >
-        <Link href="#">
+        <Link href="/">
           <Flex>
             {" "}
             <Box  mx={['-10','0','0']} h={["40px","50px","60px"]} width={["70px","50px","60px"]}>
