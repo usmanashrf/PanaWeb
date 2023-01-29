@@ -20,7 +20,7 @@ export default function Quarter5WMD(){
               <Text
                 align="center"
                 fontSize={["20px", "25px", "25px"]}
-                textColor={useColorModeValue("blue.600", "blue.300")}
+                textColor={useColorModeValue("blue.600", "blue.200")}
                 fontWeight="bold"
               >
                 Web 3 and Metaverse Quarter V

@@ -20,7 +20,7 @@ export default function Quarter5CC(){
               <Text
                 align="center"
                 fontSize={["20px", "25px", "25px"]}
-                textColor={useColorModeValue("blue.600", "blue.300")}
+                textColor={useColorModeValue("blue.600", "blue.200")}
                 fontWeight="bold"
               >
                 Developing Multi-Cloud Apps <br/>using CDK for Terraform <br></br> Quarter V

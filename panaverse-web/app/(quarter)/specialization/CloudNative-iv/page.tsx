@@ -20,7 +20,7 @@ export default function Quarter4CC(){
               <Text
                 align="center"
                 fontSize={["20px", "25px", "25px"]}
-                textColor={useColorModeValue("blue.600", "blue.300")}
+                textColor={useColorModeValue("blue.600", "blue.200")}
                 fontWeight="bold"
               >
                 Cloud-Native Computing <br></br> Quarter V

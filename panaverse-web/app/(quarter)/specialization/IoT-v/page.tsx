@@ -19,7 +19,7 @@ export default function Quarter5IoT(){
               <Text
                 align="center"
                 fontSize={["20px", "25px", "25px"]}
-                textColor={useColorModeValue("blue.600", "blue.300")}
+                textColor={useColorModeValue("blue.600", "blue.200")}
                 fontWeight="bold"
               >
                 Embedded Programming using C and Rust <br></br> Quarter V

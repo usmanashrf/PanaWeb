@@ -18,7 +18,7 @@ export default function Quarter4(){
             <Text
               fontSize={["40px", "35px", "45px"]}
               fontWeight="bold"
-              textColor={useColorModeValue("blue.600", "blue.300")}
+              textColor={useColorModeValue("blue.600", "blue.200")}
               align="center"
             >
               Specialization
@@ -450,7 +450,7 @@ export default function Quarter4(){
                 </CardBody>
                 <Divider />
                 <CardFooter>
-                  <Link href="/quarter2">
+                  <Link href="/specialization/IoT-v">
                     <Button variant="ghost" colorScheme="blue">
                       See more..
                     </Button>
