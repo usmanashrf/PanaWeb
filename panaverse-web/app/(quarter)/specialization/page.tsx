@@ -192,7 +192,7 @@ export default function Quarter4(){
                 </CardBody>
                 <Divider />
                 <CardFooter>
-                  <Link href="/quarter1">
+                  <Link href="/specialization/AI-iv">
                     <Button variant="ghost" colorScheme="blue">
                       See more..
                     </Button>
@@ -235,7 +235,7 @@ export default function Quarter4(){
                 </CardBody>
                 <Divider />
                 <CardFooter>
-                  <Link href="/quarter2">
+                  <Link href="/specialization/AI-v">
                     <Button variant="ghost" colorScheme="blue">
                       See more..
                     </Button>
@@ -302,7 +302,7 @@ export default function Quarter4(){
                 </CardBody>
                 <Divider />
                 <CardFooter>
-                  <Link href="/quarter1">
+                  <Link href="/specialization/CloudNative-iv">
                     <Button variant="ghost" colorScheme="blue">
                       See more..
                     </Button>
@@ -343,7 +343,7 @@ export default function Quarter4(){
                 </CardBody>
                 <Divider />
                 <CardFooter>
-                  <Link href="/quarter2">
+                  <Link href="/specialization/CloudNative-v">
                     <Button variant="ghost" colorScheme="blue">
                       See more..
                     </Button>
@@ -409,7 +409,7 @@ export default function Quarter4(){
                 </CardBody>
                 <Divider />
                 <CardFooter>
-                  <Link href="/quarter1">
+                  <Link href="/specialization/IoT-iv">
                     <Button variant="ghost" colorScheme="blue">
                       See more..
                     </Button>
