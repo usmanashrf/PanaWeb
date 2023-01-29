@@ -1,6 +1,7 @@
 'use client'
+import Footer from "@/app/components/Footer";
 import NavBar from "@/app/components/navBar";
-import { introVariants } from "@/app/utils/motions";
+import { cardsVariants, introVariants } from "@/app/utils/motions";
 import { Box, ChakraProvider, Flex, theme,Text,useColorModeValue, Grid, GridItem, Link, UnorderedList, ListItem, Divider, OrderedList } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
@@ -24,6 +25,7 @@ export default function Quarter1(){
                 First Quarter
               </Text>
             </motion.nav>
+            <motion.nav variants={cardsVariants} initial="hidden" whileInView="show">
             <Flex mx="30px">
               <Grid templateColumns="repeat(10, 1fr)">
                 <GridItem colEnd={[3,2]} textAlign="left">
@@ -54,7 +56,8 @@ export default function Quarter1(){
                 </GridItem>
               </Grid>
             </Flex>
-
+            </motion.nav>
+            <motion.nav variants={cardsVariants} initial="hidden" whileInView="show">
             <Flex mx="30px">
               <Grid templateColumns="repeat(10, 1fr)">
                 <GridItem colEnd={[3,2]} textAlign="left">
@@ -105,7 +108,8 @@ export default function Quarter1(){
                 </GridItem>
               </Grid>
             </Flex>
-
+            </motion.nav>
+            <motion.nav variants={cardsVariants} initial="hidden" whileInView="show">
            < Flex mx="30px">
               <Grid templateColumns="repeat(10, 1fr)">
                 <GridItem colEnd={[3,2]} textAlign="left">
@@ -166,7 +170,8 @@ export default function Quarter1(){
                 </GridItem>
               </Grid>
             </Flex>
-
+            </motion.nav>
+            <motion.nav variants={cardsVariants} initial="hidden" whileInView="show">
             < Flex mx="30px">
               <Grid templateColumns="repeat(10, 1fr)">
                 <GridItem colEnd={[3,2]} textAlign="left">
@@ -248,8 +253,8 @@ https://www.amazon.com/JavaScript-Beginner-Professional-building-interactive/dp/
                 </GridItem>
               </Grid>
             </Flex>
-
-
+            </motion.nav>
+            <motion.nav variants={cardsVariants} initial="hidden" whileInView="show">
             < Flex mx="30px">
               <Grid templateColumns="repeat(10, 1fr)">
                 <GridItem colEnd={[3,2]} textAlign="left">
@@ -360,8 +365,8 @@ https://www.amazon.com/JavaScript-Beginner-Professional-building-interactive/dp/
                 </GridItem>
               </Grid>
             </Flex>
-
-
+            </motion.nav>
+            <motion.nav variants={cardsVariants} initial="hidden" whileInView="show">
             < Flex mx="30px">
               <Grid templateColumns="repeat(10, 1fr)">
                 <GridItem colEnd={[3,2]} textAlign="left">
@@ -386,7 +391,8 @@ https://www.amazon.com/JavaScript-Beginner-Professional-building-interactive/dp/
                     <ListItem>
                     Chapters 1-11 of Learning TypeScript: Enhance Your Web Development Skills Using Type-Safe JavaScript
                     <Divider/>
-                    <Link href="https://www.amazon.com/Learning-TypeScript-Development-Type-Safe-JavaScript/dp/1098110331/ref=sr_1_1">
+                    <Link  textColor={"blue.500"}
+                      target="_blank" href="https://www.amazon.com/Learning-TypeScript-Development-Type-Safe-JavaScript/dp/1098110331/ref=sr_1_1">
                     https://www.amazon.com/Learning-TypeScript-Development-Type-Safe-JavaScript/dp/1098110331/ref=sr_1_1
                     </Link>
                     </ListItem>
@@ -437,9 +443,271 @@ https://www.amazon.com/JavaScript-Beginner-Professional-building-interactive/dp/
                 </GridItem>
               </Grid>
             </Flex>
+            </motion.nav>
+            <motion.nav variants={cardsVariants} initial="hidden" whileInView="show">
+            < Flex mx="30px">
+              <Grid templateColumns="repeat(10, 1fr)">
+                <GridItem colEnd={[3,2]} textAlign="left">
+                  <Text
+                    mt="40px"
+                    fontSize={"xl"}
+                    fontWeight={"bold"}
+                  >
+                    {" "}
+                    TypeScript for React {" "}
+                  </Text>
+                </GridItem>
+                <GridItem colStart={[2,3]} colEnd={11}>
+                  <Text
+                    borderRadius={"12px"}
+                    boxShadow="dark-lg"
+                    align={["justify"]}
+                    my="20px"
+                    p="20px"
+                  >
+                    <UnorderedList>
+                    <ListItem>
+                    Minimal TypeScript Crash Course For React With Interactive Code Exercises
+                    <Divider/>
+                    <Link  textColor={"blue.500"}
+                      target="_blank" href="https://profy.dev/article/react-typescript">
+                    https://profy.dev/article/react-typescript
+                    </Link>
+                    </ListItem>
+                    <Divider/>
+                    </UnorderedList>
+                  </Text>
+                </GridItem>
+              </Grid>
+            </Flex>
+            </motion.nav>
+            <motion.nav
+              variants={introVariants}
+              initial="hidden"
+              whileInView="show"
+            >
+              <Text
+                align="center"
+                fontSize={["20px", "25px", "25px"]}
+                textColor={useColorModeValue("blue.600", "blue.300")}
+                fontWeight="bold"
+              >
+                Quarter Break Assignments and Quizzes 
+              </Text>
+            </motion.nav>
 
+            <motion.nav variants={cardsVariants} initial="hidden" whileInView="show">
+            < Flex mx="30px">
+              <Grid templateColumns="repeat(10, 1fr)">
+                <GridItem colEnd={[3,2]} textAlign="left">
+                  <Text
+                    mt="40px"
+                    fontSize={"xl"}
+                    fontWeight={"bold"}
+                  >
+                    {" "}
+                    Quarter Break
+                     {" "}
+                  </Text>
+                </GridItem>
+                <GridItem colStart={[2,3]} colEnd={11}>
+                  <Text
+                    borderRadius={"12px"}
+                    boxShadow="dark-lg"
+                    align={["justify"]}
+                    my="20px"
+                    p="20px"
+                  >
+                   <Text> During the Quarter Break, we do the following Assignments: </Text> 
+                    <OrderedList>
+                    <ListItem>
+                    <Link  textColor={"blue.500"}
+                      target="_blank" href="https://github.com/panaverse/learn-nextjs/tree/main/assignment00_cloud_to_edge">
+                    https://github.com/panaverse/learn-nextjs/tree/main/assignment00_cloud_to_edge
+                    </Link>
+                    </ListItem>
+
+                    <ListItem>
+                    <Link  textColor={"blue.500"}
+                      target="_blank" href="https://github.com/panaverse/learn-nextjs/tree/main/assignment01_todo_app">
+                    https://github.com/panaverse/learn-nextjs/tree/main/assignment01_todo_app
+                    </Link>
+                    </ListItem>
+
+                    <ListItem>
+                    <Link  textColor={"blue.500"}
+                      target="_blank" href="https://github.com/panaverse/styling-nextjs-projects/tree/main/project00_pricing_ui">
+                     https://github.com/panaverse/styling-nextjs-projects/tree/main/project00_pricing_ui
+                    </Link>
+                    </ListItem>
+                    <ListItem>
+                    Build a Panaverse DAO Syllabus Website using Next.js 13 given the content from the following document: 
+                    <Divider/>
+                    <Link  textColor={"blue.500"}
+                      target="_blank" href="https://docs.google.com/document/d/13Z4tMKQmZpMEsOc1Y_qAXbOstRolGIFupHxQFgAFl98/edit?usp=sharing">
+                     https://docs.google.com/document/d/13Z4tMKQmZpMEsOc1Y_qAXbOstRolGIFupHxQFgAFl98/edit?usp=sharing
+                    </Link>
+                    </ListItem>
+
+                    <ListItem>
+                    The best-developed Website will be hosted on www.panaverse.co domain.
+                    </ListItem>
+                    <ListItem>
+                    Build a new PIAIC Website using Next.js 13 given the content from the current PIAIC Website and from the following document: 
+
+                    <Divider/>
+                    <Link  textColor={"blue.500"}
+                      target="_blank" href="https://docs.google.com/document/d/13Z4tMKQmZpMEsOc1Y_qAXbOstRolGIFupHxQFgAFl98/edit?usp=sharing ">
+                     https://docs.google.com/document/d/13Z4tMKQmZpMEsOc1Y_qAXbOstRolGIFupHxQFgAFl98/edit?usp=sharing 
+                    </Link>
+                    </ListItem>
+
+                    <ListItem>
+                    The best-developed Website will be hosted on www.piaic.org domain.
+                    </ListItem>
+
+                    <Divider/>
+                    </OrderedList>
+                  </Text>
+                </GridItem>
+              </Grid>
+            </Flex>
+            </motion.nav>
+            <motion.nav variants={cardsVariants} initial="hidden" whileInView="show">
+            < Flex mx="30px">
+              <Grid templateColumns="repeat(10, 1fr)">
+                <GridItem colEnd={[3,2]} textAlign="left">
+                  <Text
+                    mt="40px"
+                    fontSize={"xl"}
+                    fontWeight={"bold"}
+                  >
+                    {" "}
+                    Quarter End Quizs{" "}
+                  </Text>
+                </GridItem>
+                <GridItem colStart={[2,3]} colEnd={11}>
+                  <Text
+                    borderRadius={"12px"}
+                    boxShadow="dark-lg"
+                    align={["justify"]}
+                    my="20px"
+                    p="20px"
+                  >
+                    After completing the above Five Assignments everyone will appear in the following two Quizzes covering Github and TypeScript:
+                    <UnorderedList>
+                    <ListItem>
+                    Fundamentals of Version Control with Git Quiz
+                    <Divider/>
+                    Version Control using Git and GitHub By Sir Zeeshan Hanif (Watch Recorded Videos)
+                    <Link  textColor={"blue.500"}
+                      target="_blank" href="https://www.youtube.com/playlist?list=PLKueo-cldy_HjRnPUL4G3pWHS7FREAizF">
+                   https://www.youtube.com/playlist?list=PLKueo-cldy_HjRnPUL4G3pWHS7FREAizF
+                    </Link>
+                    </ListItem>
+                    <Divider/>
+
+                    <ListItem>
+                    Chapters 1, 2, 3, and 4 Learn Version Control with Git: A step-by-step course for the complete beginner by Tobias Günther
+                    We will also cover these readings:
+                    <Link
+                      textColor={"blue.500"}
+                      target="_blank"
+                      href="https://help.github.com/articles/markdown-basics/"
+                    >
+                    https://help.github.com/articles/markdown-basics/
+                    </Link>
+                    <Link
+                      textColor={"blue.500"}
+                      target="_blank"
+                      href="http://stackoverflow.com/questions/5009600/difference-between-fork-and-branch-on-github"
+                    >
+                    http://stackoverflow.com/questions/5009600/difference-between-fork-and-branch-on-github
+                    </Link>
+                    <Link
+                      textColor={"blue.500"}
+                      target="_blank"
+                      href="http://stackoverflow.com/questions/3329943/git-branch-fork-fetch-merge-rebase-and-clone-what-are-the-differences"
+                    >
+                    http://stackoverflow.com/questions/3329943/git-branch-fork-fetch-merge-rebase-and-clone-what-are-the-differences
+                    </Link>
+                    <Link
+                      textColor={"blue.500"}
+                      target="_blank"
+                      href="https://git-scm.com/book/en/v2/Git-Branching-Rebasing"
+                    >
+                    https://git-scm.com/book/en/v2/Git-Branching-Rebasing
+                    </Link>
+                    <Link
+                      textColor={"blue.500"}
+                      target="_blank"
+                      href="http://git-scm.com/book/en/v2/Git-Branching-Remote-Branches#Tracking-Branches"
+                    >
+                    http://git-scm.com/book/en/v2/Git-Branching-Remote-Branches#Tracking-Branches
+                    </Link>
+                    <Link
+                      textColor={"blue.500"}
+                      target="_blank"
+                      href="http://git-scm.com/book/en/v2/Git-Branching-Remote-Branches#Tracking-Branches"
+                    >
+                    http://git-scm.com/book/en/v2/Git-Branching-Remote-Branches#Tracking-Branches
+                    </Link>
+                    </ListItem>
+
+                      <ListItem>
+                      For practice:
+                      <Divider/>
+                    <Link
+                      textColor={"blue.500"}
+                      target="_blank"
+                      href="https://try.github.io/levels/1/challenges/1"
+                    >https://try.github.io/levels/1/challenges/1
+                    </Link>
+                      </ListItem>
+                      <ListItem>
+                      Homework
+                    <Divider/>
+                    <Link
+                      textColor={"blue.500"}
+                      target="_blank"
+                      href="https://www.datacamp.com/courses/introduction-to-git-for-data-science"
+                    >
+                     https://www.datacamp.com/courses/introduction-to-git-for-data-science
+                    </Link> 
+                      </ListItem>
+
+                      <ListItem>
+                      Git Quiz 
+                      </ListItem>
+                    <Divider/>
+                    <ListItem>
+                    Total Questions: 60, Total Time: 75 minutes
+                      </ListItem>
+                      
+                    <Divider/>
+                    <ListItem>
+                    TypeScript Proficiency Quiz
+                    Total Questions: 63 Duration: 120 minutes 
+                        <Divider>
+                        </Divider>
+                        Study Material:
+                        <Link
+                      textColor={"blue.500"}
+                      target="_blank"
+                      href="https://github.com/panaverse/learn-typescript"
+                    >
+                    https://github.com/panaverse/learn-typescript
+                    </Link>
+                      </ListItem>
+                    </UnorderedList>
+                  </Text>
+                </GridItem>
+              </Grid>
+            </Flex>
+            </motion.nav>
           </Flex>
         </Box>
+        <Footer></Footer>
       </ChakraProvider>
     );
 }

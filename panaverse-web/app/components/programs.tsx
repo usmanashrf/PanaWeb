@@ -65,11 +65,11 @@ export default function Programs(){
             </CardBody>
             <Divider />
             <CardFooter>
-             
+            <Link href="/quarter2">
                 <Button variant="ghost" colorScheme="blue">
                   See more..
                 </Button>
-              
+              </Link>
             </CardFooter>
           </Card>
           </motion.nav>
@@ -93,11 +93,11 @@ export default function Programs(){
             </CardBody>
             <Divider />
             <CardFooter>
-             
+            <Link href="/quarter3">
                 <Button variant="ghost" colorScheme="blue">
                   See more..
                 </Button>
-              
+              </Link>
             </CardFooter>
           </Card>
           </motion.nav>
@@ -125,11 +125,11 @@ export default function Programs(){
             </CardBody>
             <Divider />
             <CardFooter>
-             
+             <Link href="/specialization">
                 <Button variant="ghost" colorScheme="blue">
                   See more..
                 </Button>
-              
+                </Link>
             </CardFooter>
           </Card>
           </motion.nav>
