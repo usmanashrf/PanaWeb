@@ -10,6 +10,8 @@ import {
   MoonIcon,
   SunIcon,
   ChevronDownIcon,
+  DragHandleIcon,
+  ChevronLeftIcon,
 } from "@chakra-ui/icons";
 import {
   Flex,
@@ -25,6 +27,7 @@ import {
   MenuList,
   MenuItem,
   Button,
+  Image
 } from "@chakra-ui/react";
 import MenuLogo from "./menuLogo";
 import { Show, Hide } from '@chakra-ui/react'
@@ -33,7 +36,7 @@ import { navVariants } from "../utils/motions";
 import HamburgerMenu from "../images/hamburger";
 import dynamic from "next/dynamic";
 import Loader from "../utils/modelLoader";
-import Intro from "./introduction";
+import { useRouter } from 'next/navigation';
 
 const LazyModel = dynamic(() => import('../utils/panaModel'), {
   ssr: true,
@@ -47,11 +50,11 @@ export default function NavBar() {
     xl: "xl",
   });
   const { colorMode, toggleColorMode } = useColorMode();
+  const router = useRouter();
   return (
     <motion.nav variants={navVariants} initial="hidden" whileInView="show">
       <Flex
         as="nav"
-        
         justify="space-between"
         bg={useColorModeValue("white.100", "gray.800")}
         overflow="hidden"
@@ -61,7 +64,11 @@ export default function NavBar() {
         <Link href="/">
           <Flex>
             {" "}
-            <Box  mx={['-10','0','0']} h={["40px","50px","60px"]} width={["70px","50px","60px"]}>
+            <Box
+              mx={["-10", "0", "0"]}
+              h={["40px", "50px", "60px"]}
+              width={["70px", "50px", "60px"]}
+            >
               <MenuLogo></MenuLogo>
 
               {/* <LazyModel /> */}
@@ -100,31 +107,48 @@ export default function NavBar() {
             anaverse
           </Text>
           </Show> */}
-           {breakpoint !== "xs" && (
-          <Flex align="center">
-            <Link href="/" mr={4}>
-              <Text  color={useColorModeValue("gray.800", "white")}>Home</Text>
-            </Link>
-           
+          {breakpoint !== "xs" && (
+            <Flex align="center">
+              <Link href="/" mr={4}>
+                <Text color={useColorModeValue("gray.800", "white")}>Home</Text>
+              </Link>
+
               {/* <Text  color={useColorModeValue("gray.800", "white")}></Text> */}
-            <Link href="/about" mr={4}>
-              <Text  color={useColorModeValue("gray.800", "white")}>About</Text>
-            </Link>
-            <Link href="#" mr={4}>
-              <Text color={useColorModeValue("gray.800", "white")}>Contact</Text>
-            </Link>
-          </Flex>
-        )}
+              <Link href="/Team" mr={4}>
+                <Text color={useColorModeValue("gray.800", "white")}>Team</Text>
+              </Link>
+              <Link href="/about" mr={4}>
+                <Text color={useColorModeValue("gray.800", "white")}>
+                  About
+                </Text>
+              </Link>
+              <Link href="https://docs.google.com/document/d/13Z4tMKQmZpMEsOc1Y_qAXbOstRolGIFupHxQFgAFl98/edit" mr={4}>
+                <Text color={useColorModeValue("gray.800", "white")}>
+                  More..
+                </Text>
+              </Link>
+            </Flex>
+          )}
         </Flex>
         {breakpoint !== "xs" && (
           <Flex align="center">
-            <Flex mr={4} mt="3px">  <Menu>
-  <MenuButton  size='xs' as={Button} rightIcon={<ChevronDownIcon />}>Courses </MenuButton>
-  <MenuList>
-    <MenuItem as='a' href="/programs">Web 3 and Metaverse</MenuItem>
-  </MenuList>
-</Menu>
-</Flex>
+            <Flex mr={4} mt="3px">
+              {" "}
+              <Menu>
+                <MenuButton
+                  size="xs"
+                  as={Button}
+                  rightIcon={<ChevronDownIcon />}
+                >
+                  Courses{" "}
+                </MenuButton>
+                <MenuList>
+                  <MenuItem as="a" href="/programs">
+                    Web 3 and Metaverse
+                  </MenuItem>
+                </MenuList>
+              </Menu>
+            </Flex>
             <AnimatePresence exitBeforeEnter initial={false}>
               <motion.div
                 style={{ display: "inline-block" }}
@@ -147,36 +171,46 @@ export default function NavBar() {
         )}
         {breakpoint === "xs" && (
           <Flex ml="30px">
-          <Menu>
-            <MenuButton
-              as={IconButton}
-              aria-label="Options"
-              icon={<HamburgerMenu></HamburgerMenu>}
-              bg={useColorModeValue("gray.500", "greu.500")}
-              _hover={{ bg: "gray.500" }}
-            />
-           
-            <MenuList>
-            
-            <Flex ml="10px" alignContent={"center"}>
-            <Menu >
-  <MenuButton  variant='link' size='xs' as={Button} rightIcon={<ChevronDownIcon />}>Courses </MenuButton>
-  <MenuList>
-    <MenuItem as='a' href="/programs">Web 3 and Metaverse</MenuItem>
-  </MenuList>
-</Menu>
-            </Flex>
-              <MenuItem icon={<InfoIcon />}>
-                About
-              </MenuItem>
-              <MenuItem icon={<PhoneIcon />}>
-                Contact
-              </MenuItem>
-              <MenuItem onClick={toggleColorMode} icon={useColorModeValue(<MoonIcon />, <SunIcon />)}>
-              {useColorModeValue("Dark", "Light")}
-              </MenuItem>
-            </MenuList>
-          </Menu>
+            <Menu>
+              <MenuButton
+                as={IconButton}
+                aria-label="Options"
+                icon={<HamburgerMenu></HamburgerMenu>}
+                bg={useColorModeValue("gray.500", "greu.500")}
+                _hover={{ bg: "gray.500" }}
+              />
+
+              <MenuList>
+                <Flex ml="10px" alignContent={"center"}>
+                  <Menu>
+                    <MenuButton
+                      variant="link"
+                      size="xs"
+                      as={Button}
+                      rightIcon={<ChevronDownIcon />}
+                    >
+                      Courses{" "}
+                    </MenuButton>
+                    <MenuList>
+                      <MenuItem as="a" href="/programs">
+                        Web 3 and Metaverse
+                      </MenuItem>
+                    </MenuList>
+                  </Menu>
+                </Flex>
+                <MenuItem icon={<Image src={useColorModeValue("/homeIcon.png","/homeIconW.png")}></Image>}><Link href="/">Home</Link></MenuItem>
+                <MenuItem icon={<Image src={useColorModeValue("/teams.png","/teamsW.png")}></Image>}><Link href="/Team">Team</Link></MenuItem>
+                <MenuItem onClick={()=>{router.push('/about')}} icon={<InfoIcon />}>About</MenuItem>
+                <MenuItem
+                  onClick={toggleColorMode}
+                  icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
+                >
+                  {useColorModeValue("Dark", "Light")}
+                </MenuItem>
+                <MenuItem onClick={()=>{router.push(`https://docs.google.com/document/d/13Z4tMKQmZpMEsOc1Y_qAXbOstRolGIFupHxQFgAFl98/edit`)}} icon={<DragHandleIcon />}>
+                  More..</MenuItem>
+              </MenuList>
+            </Menu>
           </Flex>
         )}
       </Flex>

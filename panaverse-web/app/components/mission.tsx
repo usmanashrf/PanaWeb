@@ -1,13 +1,16 @@
 import { Box, Flex,Text,useColorModeValue } from "@chakra-ui/react";
+import { motion } from "framer-motion";
+import { qtr1Variants } from "../utils/motions";
 
 
 export default function Mission(){
     return(
-        <Box my="40px">
-            <Flex direction={"column"}>
+        <motion.nav variants={qtr1Variants} initial="hidden" whileInView="show">
+        <Box my="40px" mx="30px" border={"2px"} borderRadius="12px"  boxShadow='lg'>
+            <Flex direction={"column"} >
             <Text fontSize={["40px","35px","45px"]} textColor={useColorModeValue("blue.600", "blue.300")} fontWeight="bold" align="center">Our Mission</Text>
             <Flex direction={["column","row","row"]} justify="space-between" mx={["0","80px","100px"]} >
-            <Box  my="20px" w="1/2">
+            <Box  my="20px" w="1/2" >
             <iframe width="460" height="280" src="https://www.youtube.com/embed/_OVnXw2ldog" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
             </Box>
             <Text align={["justify"]} ml={['10px']} my="30" mx={["10px","120px"]}>
@@ -22,5 +25,6 @@ export default function Mission(){
             
             </Flex>
         </Box>
+        </motion.nav>
     );
 }

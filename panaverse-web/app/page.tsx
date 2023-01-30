@@ -20,11 +20,7 @@ export default function Home() {
        <Programs></Programs> 
        <Cities></Cities>
        <Mission></Mission>
-       <Divider/>
        <Footer></Footer>
-       
       </ChakraProvider>
-     
-
   )
 }

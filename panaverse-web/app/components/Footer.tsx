@@ -6,7 +6,7 @@ let year = new Date().getFullYear();
 export default function Footer(){
     return (
       <Box>
-        <Box bg="gray.700" color="white" p="10px">
+        <Box bg="gray.700" color="white" p="10px" mt={"20px"}>
           <Grid
             templateRows="repeat(2, 1fr)"
             templateColumns="repeat(5, 1fr)"
@@ -37,16 +37,14 @@ export default function Footer(){
               >
                 <Flex direction="column" minWidth="max-content">
                   <Text fontWeight="bold">Panaverse DAO</Text>
-                  <Link>About us</Link>
-                  <Link>Our Mission</Link>
+                  <Link href="/about">About us</Link>
                   <Link>Panaverse Community</Link>
                 </Flex>
                 <Show above="sm">
                   <Flex maxW="sm" direction="column">
-                    <Text fontWeight="bold"> Faculty</Text>
-                    <Link>Courses Detial</Link>
-                    <Link>Class Timing</Link>
-                    <Link>Locations</Link>
+                    <Text fontWeight="bold"> <Link href="/Team"> Faculty</Link></Text>
+                    <Link href="/programs">Courses Detial</Link>
+                    <Link href="/locations">Locations</Link>
                   </Flex>
                 </Show>
               </Stack>

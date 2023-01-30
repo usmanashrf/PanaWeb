@@ -12,7 +12,6 @@ export default function About(){
         <NavBar></NavBar>
         <AboutHeader></AboutHeader>
         <Nutshell></Nutshell>
-        <Divider/>
        <Footer></Footer>
         </ChakraProvider>
     )

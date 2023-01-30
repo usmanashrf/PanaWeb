@@ -17,13 +17,16 @@ import {
   useColorModeValue
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import { cardsVariants } from "../utils/motions";
+import { cardsVariants, navVariants } from "../utils/motions";
 
 export default function Cities() {
   return (
     <Box position={"relative"} mb="400px">
         <Divider></Divider>
-    <Text my="40px" fontSize={["40px","35px","45px"]} fontWeight="bold" textColor={useColorModeValue("blue.600", "blue.300")} >Operational Cities</Text>
+        <motion.nav variants={navVariants} initial="hidden" whileInView="show">
+        <Text my="40px" fontSize={["40px","35px","45px"]} fontWeight="bold" textColor={useColorModeValue("blue.600", "blue.300")} >Operational Cities</Text>
+        </motion.nav>
+    
       <VStack alignItems="left"  direction={"row"}>
       <Grid templateColumns='repeat(2, 1fr)' gap={6}>
   <GridItem w='100%'>

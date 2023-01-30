@@ -111,7 +111,7 @@ export default function Programs(){
                 borderRadius="lg"
               /> 
               <Stack mt="6" spacing="3">
-                <Heading size="md" alignItems="center">Quarter IV (Specialized)</Heading>
+                <Heading size="md" alignItems="center">Quarter IV, V (Specialized)</Heading>
                 <Text alignItems="center" fontWeight="bold">
                 
                 </Text>

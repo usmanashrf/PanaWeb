@@ -14,15 +14,8 @@ const LazyModel = dynamic(() => import('../utils/panaModel'), {
 export default function FrontPage(){
     return (
       <Box bg={useColorModeValue("gray.100", "gray.700")}>
-        <Flex justify="space-between">
-          {/* <motion.div
-      initial={{ x: -100 }}
-      animate={{ x: 0 }}
-      transition={{ duration: 1 }}
-      ml="-20px"
-    >
-      <Image src="plntball.png"></Image>
-    </motion.div> */}
+        <Flex justify="space-between" backgroundImage={"/blackLines.png"}>
+         
   <motion.div
     initial={{ opacity: 0, scale: 0.5 }}
     animate={{ opacity: 1, scale: 1 }}
