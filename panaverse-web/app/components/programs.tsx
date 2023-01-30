@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 export default function Programs(){
     return (
-      <Box margin={"auto"} mt="150px" w="75%" mb="80px">
+      <Box margin={"auto"} mt="50px" w="75%" mb="100px">
         <motion.nav variants={introVariants} initial="hidden" whileInView="show">
        
         <Text fontSize={["40px","35px","45px"]} fontWeight="bold" textColor={useColorModeValue("blue.600", "blue.300")} align="center">Program of Studies</Text>

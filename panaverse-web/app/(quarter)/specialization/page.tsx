@@ -9,7 +9,7 @@ export default function Quarter4(){
     return (
       <ChakraProvider cssVarsRoot={undefined} theme={theme}>
         <NavBar></NavBar>
-        <Box margin={"auto"} mt="50px" w="75%" mb="80px">
+        <Box margin={"auto"} mt="50px" w="75%" mb="100px">
           <motion.nav
             variants={introVariants}
             initial="hidden"

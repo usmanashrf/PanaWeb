@@ -9,7 +9,7 @@ export default function Quarter5AI(){
     return (
       <ChakraProvider cssVarsRoot={undefined} theme={theme}>
         <NavBar></NavBar>
-        <Box>
+        <Box mb="100px">
           <Flex direction={"column"}>
             
             <motion.nav

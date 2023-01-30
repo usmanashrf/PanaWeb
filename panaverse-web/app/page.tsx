@@ -16,8 +16,8 @@ export default function Home() {
        <NavBar></NavBar>
        <FrontPage></FrontPage>
        <Intro></Intro>
-       <Divider />
-       <Programs></Programs>
+       <Divider />   
+       <Programs></Programs> 
        <Cities></Cities>
        <Mission></Mission>
        <Divider/>

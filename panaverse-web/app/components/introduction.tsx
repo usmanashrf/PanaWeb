@@ -10,7 +10,7 @@ const LazyModel = dynamic(() => import('../utils/panaModel'), {
   })
 export default function Intro(){
     return(
-        <Box mt="100px" h="absolute" bgColor="grey:300" mb="60px">
+        <Box mt="100px"  h="absolute" bgColor="grey:300" mb="100px">
         <Flex justify="space-between" mx={["0","150px"]}  direction={["column","column", "row"]}>
             {/* <HStack > */}
             

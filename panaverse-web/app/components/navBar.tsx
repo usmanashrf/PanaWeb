@@ -9,6 +9,7 @@ import {
   PhoneIcon,
   MoonIcon,
   SunIcon,
+  ChevronDownIcon,
 } from "@chakra-ui/icons";
 import {
   Flex,
@@ -99,15 +100,31 @@ export default function NavBar() {
             anaverse
           </Text>
           </Show> */}
-        </Flex>
-        {breakpoint !== "xs" && (
+           {breakpoint !== "xs" && (
           <Flex align="center">
+            <Link href="/" mr={4}>
+              <Text  color={useColorModeValue("gray.800", "white")}>Home</Text>
+            </Link>
+           
+              {/* <Text  color={useColorModeValue("gray.800", "white")}></Text> */}
             <Link href="/about" mr={4}>
               <Text  color={useColorModeValue("gray.800", "white")}>About</Text>
             </Link>
             <Link href="#" mr={4}>
               <Text color={useColorModeValue("gray.800", "white")}>Contact</Text>
             </Link>
+          </Flex>
+        )}
+        </Flex>
+        {breakpoint !== "xs" && (
+          <Flex align="center">
+            <Flex mr={4} mt="3px">  <Menu>
+  <MenuButton  size='xs' as={Button} rightIcon={<ChevronDownIcon />}>Courses </MenuButton>
+  <MenuList>
+    <MenuItem as='a' href="/programs">Web 3 and Metaverse</MenuItem>
+  </MenuList>
+</Menu>
+</Flex>
             <AnimatePresence exitBeforeEnter initial={false}>
               <motion.div
                 style={{ display: "inline-block" }}
