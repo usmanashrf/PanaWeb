@@ -155,14 +155,24 @@ export default function NavBar() {
               bg={useColorModeValue("gray.500", "greu.500")}
               _hover={{ bg: "gray.500" }}
             />
+           
             <MenuList>
+            
+            <Flex ml="10px" alignContent={"center"}>
+            <Menu >
+  <MenuButton  variant='link' size='xs' as={Button} rightIcon={<ChevronDownIcon />}>Courses </MenuButton>
+  <MenuList>
+    <MenuItem as='a' href="/programs">Web 3 and Metaverse</MenuItem>
+  </MenuList>
+</Menu>
+            </Flex>
               <MenuItem icon={<InfoIcon />}>
                 About
               </MenuItem>
-              <MenuItem icon={<PhoneIcon />} command="⌘O">
+              <MenuItem icon={<PhoneIcon />}>
                 Contact
               </MenuItem>
-              <MenuItem onClick={toggleColorMode} icon={useColorModeValue(<MoonIcon />, <SunIcon />)} command="⌘O">
+              <MenuItem onClick={toggleColorMode} icon={useColorModeValue(<MoonIcon />, <SunIcon />)}>
               {useColorModeValue("Dark", "Light")}
               </MenuItem>
             </MenuList>
