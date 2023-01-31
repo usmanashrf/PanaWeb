@@ -37,19 +37,19 @@ export default function Footer(){
               >
                 <Flex direction="column" minWidth="max-content">
                   <Text fontWeight="bold">Panaverse DAO</Text>
-                  <Link href="/about">About us</Link>
-                  <Link>Panaverse Community</Link>
+                  <Link style={{ textDecoration: 'none' }} href="/about">About us</Link>
+                  <Link style={{ textDecoration: 'none' }}>Panaverse Community</Link>
                 </Flex>
                 <Show above="sm">
                   <Flex maxW="sm" direction="column">
                     <Text fontWeight="bold"> <Link href="/Team"> Faculty</Link></Text>
-                    <Link href="/programs">Courses Detial</Link>
-                    <Link href="/locations">Locations</Link>
+                    <Link style={{ textDecoration: 'none' }} href="/programs">Courses Detial</Link>
+                    <Link style={{ textDecoration: 'none' }} href="/locations">Locations</Link>
                   </Flex>
                 </Show>
               </Stack>
             </GridItem>
-            <GridItem colSpan={[1, 2]} ml={["-50px", "0px", "0"]}>
+            <GridItem colSpan={[1, 2]} ml={["-50px", "0px", "0"]} mt="-20px" mb="20px">
               <Show below="md">
                 <SocialMediaIcons></SocialMediaIcons>
               </Show>
@@ -63,7 +63,7 @@ export default function Footer(){
         </Box>
         <Box borderTopRadius={"20px"} bg={"gray.600"} mx={["", "200px"]} mt="-50px">
           <Flex px="20px" justify="space-between">
-            <Image src="/panacloud.png"></Image>
+            <Image src="/oculus.png"></Image>
             
             <Text mt="10px" color={"white"}  fontSize={["10px","15px"]}> © {year} Usman Ashraf. All rights reserved.</Text>
           </Flex>

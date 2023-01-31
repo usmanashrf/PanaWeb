@@ -61,7 +61,7 @@ export default function NavBar() {
         p={4}
         px={[16, 6, 6]}
       >
-        <Link href="/">
+        <Link style={{ textDecoration: 'none' }}  href="/">
           <Flex>
             {" "}
             <Box
@@ -109,20 +109,20 @@ export default function NavBar() {
           </Show> */}
           {breakpoint !== "xs" && (
             <Flex align="center">
-              <Link href="/" mr={4}>
+              <Link  style={{ textDecoration: 'none' }} href="/" mr={4}>
                 <Text color={useColorModeValue("gray.800", "white")}>Home</Text>
               </Link>
 
               {/* <Text  color={useColorModeValue("gray.800", "white")}></Text> */}
-              <Link href="/Team" mr={4}>
+              <Link style={{ textDecoration: 'none' }} href="/Team" mr={4}>
                 <Text color={useColorModeValue("gray.800", "white")}>Team</Text>
               </Link>
-              <Link href="/about" mr={4}>
+              <Link style={{ textDecoration: 'none' }} href="/about" mr={4}>
                 <Text color={useColorModeValue("gray.800", "white")}>
                   About
                 </Text>
               </Link>
-              <Link href="https://docs.google.com/document/d/13Z4tMKQmZpMEsOc1Y_qAXbOstRolGIFupHxQFgAFl98/edit" mr={4}>
+              <Link style={{ textDecoration: 'none' }} href="https://docs.google.com/document/d/13Z4tMKQmZpMEsOc1Y_qAXbOstRolGIFupHxQFgAFl98/edit" mr={4}>
                 <Text color={useColorModeValue("gray.800", "white")}>
                   More..
                 </Text>

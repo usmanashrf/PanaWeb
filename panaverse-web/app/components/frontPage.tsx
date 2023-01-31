@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { fadeIn, introVariants, qtr1Variants, slideIn, staggerContainer, textVariant } from "../utils/motions";
-import {Box, Flex, Text, Image,  useColorModeValue, Button, Show, Hide, Card, CardBody, VStack} from "@chakra-ui/react";
+import {Box, Flex, Text, Image,  useColorModeValue, Button, Show, Hide, Card, CardBody, VStack, Link} from "@chakra-ui/react";
 import Loader from '../utils/modelLoader'
 import dynamic from "next/dynamic";
 
@@ -28,8 +28,8 @@ export default function FrontPage(){
             position={"absolute"}
             h={["absolute"]}
           >
-            <VStack  borderRightRadius="70px" p="30px"  pl={["100px","50vh"]} mx="10px"  boxShadow='dark-lg' >
-              
+            
+            <VStack  borderRightRadius="30px" p="30px"  pl={["100px","50vh"]} mx="10px"  boxShadow='dark-lg' >
               <Show above='sm'>
               <Text
                 mt="5px"
@@ -86,6 +86,7 @@ export default function FrontPage(){
                 whileTap={{ scale: 0.8 }}
                 style={{ x: 100 }}
               >
+                
                 <Button
                   ml={["-160px", "-200px", "-200px"]}
                   mt="20px"
@@ -93,8 +94,8 @@ export default function FrontPage(){
                   color="white"
                   _hover={{ bg: "gray.500" }}
                 >
-                  {" "}
-                  Apply Now
+                  {" "}<Link  style={{ textDecoration: 'none' }} href="https://portal.piaic.org/signup">Apply Now</Link>
+                  
                 </Button>
               </motion.div>
             </VStack>
