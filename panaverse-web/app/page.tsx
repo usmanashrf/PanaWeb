@@ -8,6 +8,8 @@ import theme from "./utils/theme";
 import Footer from "./components/Footer";
 import Cities from "./components/operationalCities";
 import Mission from "./components/mission";
+import ElasticCarousel from "./utils/Elastic";
+import EventsSlider from "./components/eventSlider";
 
 export default function Home() {
   return (
@@ -19,6 +21,7 @@ export default function Home() {
        <Divider />   
        <Programs></Programs> 
        <Cities></Cities>
+       <EventsSlider></EventsSlider>
        <Mission></Mission>
        <Footer></Footer>
       </ChakraProvider>

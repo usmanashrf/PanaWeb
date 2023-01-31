@@ -1,0 +1,50 @@
+
+{
+    "items": {
+      "elastic": [
+        {
+          "id": 1,
+          
+          "imageUrl": "/smSem1.png"
+        },
+        {
+          "id": 2,
+          "imageUrl": "/smSem2.png"
+        },
+       
+        {
+          "id": 4,
+          "imageUrl": "/smSem3.png"
+        },
+        {
+          "id": 5,
+          "imageUrl": "/smSem4.png"
+        },{
+          "id": 1,
+          
+          "imageUrl": "/smSem1.png"
+        },
+        {
+          "id": 2,
+          "imageUrl": "/smSem2.png"
+        },
+       
+        {
+          "id": 4,
+          "imageUrl": "/smSem3.png"
+        },
+        {
+          "id": 5,
+          "imageUrl": "/smSem4.png"
+        },{
+          "id": 1,
+          
+          "imageUrl": "/smSem1.png"
+        },
+        {
+          "id": 2,
+          "imageUrl": "/smSem2.png"
+        }
+      ]
+    }
+  }
