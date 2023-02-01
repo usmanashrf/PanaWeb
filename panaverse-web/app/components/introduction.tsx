@@ -26,7 +26,7 @@ export default function Intro(){
             {/* </Show> */}
             
             <motion.nav variants={introVariants} initial="hidden" whileInView="show">
-            <VStack borderLeftRadius="50px" boxShadow='dark-lg' h="relative" pr={["0px","200vh"]} p="30px" mt={["0","20px","40px"]} mr={["0","150px"]}>
+            <VStack borderLeftRadius="50px" boxShadow='dark-lg' h="relative" p="30px" pr="-10px" mt={["0","20px","40px"]} mr={["0","150px"]}>
             <Flex direction={["column","row"]} >
             <Text  fontSize={["20px","35px","45px"]} textColor={useColorModeValue("blue.600", "blue.300")} fontWeight="bold">
             The Panaverse Community</Text>

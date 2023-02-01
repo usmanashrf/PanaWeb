@@ -10,6 +10,7 @@ import Cities from "./components/operationalCities";
 import Mission from "./components/mission";
 import ElasticCarousel from "./utils/Elastic";
 import EventsSlider from "./components/eventSlider";
+import Metaverse from "./components/metaverse";
 
 export default function Home() {
   return (
@@ -17,8 +18,10 @@ export default function Home() {
       <ChakraProvider cssVarsRoot={undefined} theme={theme}>
        <NavBar></NavBar>
        <FrontPage></FrontPage>
+       
        <Intro></Intro>
        <Divider />   
+       <Metaverse></Metaverse>
        <Programs></Programs> 
        <Cities></Cities>
        <EventsSlider></EventsSlider>

@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { fadeIn, introVariants, qtr1Variants, slideIn, staggerContainer, textVariant } from "../utils/motions";
-import {Box, Flex, Text, Image,  useColorModeValue, Button, Show, Hide, Card, CardBody, VStack, Link} from "@chakra-ui/react";
+import {Box, Flex, Text, Image,  useColorModeValue, Button, Show, Hide, Card, CardBody, VStack, Link, Stat, StatLabel, StatNumber, StatHelpText, StatArrow, HStack} from "@chakra-ui/react";
 import Loader from '../utils/modelLoader'
 import dynamic from "next/dynamic";
 
@@ -14,7 +14,7 @@ const LazyModel = dynamic(() => import('../utils/panaModel'), {
 export default function FrontPage(){
     return (
       <Box bg={useColorModeValue("gray.100", "gray.700")}>
-        <Flex justify="space-between" backgroundImage={"/blackLines.png"}>
+        <Flex justify="space-between" backgroundImage={"/blackLines.png"} backgroundRepeat={"no-repeat"}>
          
   <motion.div
     initial={{ opacity: 0, scale: 0.5 }}
@@ -27,9 +27,11 @@ export default function FrontPage(){
             w="10%"
             position={"absolute"}
             h={["absolute"]}
+            backgroundImage={"/blackLines.png"}
           >
-            
-            <VStack  borderRightRadius="30px" p="30px"  pl={["100px","50vh"]} mx="10px"  boxShadow='dark-lg' >
+            <HStack borderRightRadius="30px" p="30px"   mx="10px"  boxShadow='dark-lg' >
+            <VStack pl={["50px","25vh"]} pr={["8px","10vh"]}>
+              
               <Show above='sm'>
               <Text
                 mt="5px"
@@ -82,9 +84,9 @@ export default function FrontPage(){
                 </Text>
               </Hide> */}
               <motion.div
-                whileHover={{ scale: 1.2 }}
+                whileHover={{ scale: 0.9 }}
                 whileTap={{ scale: 0.8 }}
-                style={{ x: 100 }}
+                style={{ x: 110 }}
               >
                 
                 <Button
@@ -99,6 +101,15 @@ export default function FrontPage(){
                 </Button>
               </motion.div>
             </VStack>
+            <Flex alignSelf={"flex-end"}>  <Stat >
+    <StatLabel>Members</StatLabel>
+    <StatNumber>3500+</StatNumber>
+    <StatHelpText>
+      <StatArrow type='increase' />
+      53.36%
+    </StatHelpText>
+  </Stat></Flex>
+            </HStack>
           </Flex>
           </motion.div>
           <Flex ml={["-25px", "0", "0"]}  w={["90%","60%"]}>
@@ -109,10 +120,10 @@ export default function FrontPage(){
               style={{ x: 100 }}
             >
               <div>
-              <Show above='sm'>
+              <Show above='768px'>
               <motion.div
         variants={slideIn('right', 'tween', 0.2, 1)}
-        className="relative w-full md:-mt-[20px] -mt-[12px]"
+        
       > <Image  src="desktopPic.png"></Image>
       </motion.div>
       </Show>

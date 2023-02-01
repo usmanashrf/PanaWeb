@@ -21,10 +21,10 @@ import { cardsVariants, navVariants } from "../utils/motions";
 
 export default function Cities() {
   return (
-    <Box position={"relative"} mb="400px">
+    <Box position={"relative"} mb="400px" bg={useColorModeValue("gray.100", "gray.700")}>
         <Divider></Divider>
         <motion.nav variants={navVariants} initial="hidden" whileInView="show">
-        <Text my="40px" fontSize={["40px","35px","45px"]} fontWeight="bold" textColor={useColorModeValue("blue.600", "blue.300")} >Operational Cities</Text>
+        <Text my="40px" align={"center"} fontSize={["40px","35px","45px"]} fontWeight="bold" textColor={useColorModeValue("blue.600", "blue.300")} >Operational Cities</Text>
         </motion.nav>
     
       <VStack alignItems="left"  direction={"row"}>
