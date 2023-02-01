@@ -28,11 +28,11 @@ export default function Cities() {
         </motion.nav>
     
       <VStack alignItems="left"  direction={"row"}>
-      <Grid templateColumns='repeat(2, 1fr)' gap={6}>
+      <Grid  templateColumns='repeat(2, 1fr)' gap={[2,4,6]}>
   <GridItem w='100%'>
   <motion.nav variants={cardsVariants} initial="hidden" whileInView="show">
 <Card
-          direction={{ base: "column", sm: "row" }}
+          direction={{ base: "column",md:"row", sm: "row" }}
           overflow="hidden"
           variant="outline"
           boxShadow='dark-lg'
@@ -40,7 +40,7 @@ export default function Cities() {
         >
           <Image
             objectFit="cover"
-            maxW={{ base: "100%", sm: "200px" }}
+            maxW={{ base: "100%",sm: "200px" }}
             src="/KHR.png"
             alt="Khr"
           />

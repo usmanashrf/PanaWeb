@@ -22,7 +22,7 @@ export default function FrontPage(){
     transition={{ duration: 0.5 }}
   >
           <Flex
-            mt={["0px", "25px", "35px"]}
+            mt={["0px", "5px", "35px"]}
             ml={["-20"]}
             w="10%"
             position={"absolute"}
@@ -32,7 +32,7 @@ export default function FrontPage(){
             <HStack borderRightRadius="30px" p="30px"   mx="10px"  boxShadow='dark-lg' >
             <VStack pl={["50px","25vh"]} pr={["8px","10vh"]}>
               
-              <Show above='sm'>
+              <Show above='md'>
               <Text
                 mt="5px"
                 fontSize={["20px", "35px", "45px"]}
@@ -52,11 +52,11 @@ export default function FrontPage(){
               </Text>
               </Show>
               
-              <Show below='sm'>
+              <Show below='md'>
               <Text
-                fontSize={["20px", "35px", "45px"]}
+                fontSize={["16px", "18px", "25px"]}
                 fontWeight="bold"
-                ml={"10px"}
+                ml={["0px","0px","10px"]}
               >
                 Web 3.0 Metaverse
               </Text>
@@ -70,7 +70,7 @@ export default function FrontPage(){
               </Text> */}
               </Show>
               <Text
-                fontSize={["15px", "15px", "28px"]}
+                fontSize={["10px", "12px", "28px"]}
                 pl={["20px","0px"]}
                 fontWeight="bold"
                 color="#E41B17"
@@ -90,11 +90,12 @@ export default function FrontPage(){
               >
                 
                 <Button
-                  ml={["-160px", "-200px", "-200px"]}
-                  mt="20px"
+                  ml={["-160px", "-160px", "-200px"]}
+                  mt={["5px","5px","20px"]}
                   bg="#2B6CB0"
                   color="white"
                   _hover={{ bg: "gray.500" }}
+                  
                 >
                   {" "}<Link  style={{ textDecoration: 'none' }} href="https://portal.piaic.org/signup">Apply Now</Link>
                   

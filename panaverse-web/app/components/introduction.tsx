@@ -11,7 +11,7 @@ const LazyModel = dynamic(() => import('../utils/panaModel'), {
 export default function Intro(){
     return(
         <Box mt="100px"  h="absolute" bgColor="grey:300" mb="100px">
-        <Flex justify="space-between" mx={["0","150px"]}  direction={["column","column", "row"]}>
+        <Flex justify="space-between"  mx={["0px","0px","150px"]}  direction={["column","column", "row"]}>
             {/* <HStack > */}
             
             {/* <Show above="md"> <LazyModel position="relative"></LazyModel> 
@@ -26,11 +26,11 @@ export default function Intro(){
             {/* </Show> */}
             
             <motion.nav variants={introVariants} initial="hidden" whileInView="show">
-            <VStack borderLeftRadius="50px" boxShadow='dark-lg' h="relative" p="30px" pr="-10px" mt={["0","20px","40px"]} mr={["0","150px"]}>
-            <Flex direction={["column","row"]} >
-            <Text  fontSize={["20px","35px","45px"]} textColor={useColorModeValue("blue.600", "blue.300")} fontWeight="bold">
+            <VStack borderLeftRadius="30px" borderRightRadius={"30px"} boxShadow='dark-lg' h="relative" p="30px"  mt={["0","20px","40px"]} mr={["50px","150px"]}>
+            <Flex direction={["column","column","row"]} >
+            <Text  fontSize={["20px","25px","45px"]} textColor={useColorModeValue("blue.600", "blue.300")} fontWeight="bold">
             The Panaverse Community</Text>
-            <VStack direction={["column","row"]}width={["250px","450px"]} mx="10px">
+            <VStack direction={["column","row"]}width={["250px","250px","450px"]} mx="10px">
             <Text  align={["justify","left"]} >
             Web3, 3D Metaverse, AI, IoT, Cloud, and Edge technologies expand the internet as we know it
             by introducing novel features and advancements.In this brand-new type of curriculum.
