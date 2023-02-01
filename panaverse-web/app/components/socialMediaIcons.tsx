@@ -12,7 +12,7 @@ export default function SocialMediaIcons(){
             whileTap={{ scale: 0.8 }}
             style={{ x: 100 }}
           >
-            <Link href="https://www.facebook.com/groups/panaverse">
+            <Link  target="_blank" href="https://www.facebook.com/groups/panaverse">
             <FacebookIcon></FacebookIcon>
             </Link>
             
@@ -23,7 +23,7 @@ export default function SocialMediaIcons(){
             whileTap={{ scale: 0.8 }}
             style={{ x: 100 }}
           >
-            <Link href="https://twitter.com/Panaverse_edu"><TwitterIcon></TwitterIcon></Link>
+            <Link  target="_blank" href="https://twitter.com/Panaverse_edu"><TwitterIcon></TwitterIcon></Link>
             
           </motion.div>
 
@@ -32,7 +32,7 @@ export default function SocialMediaIcons(){
             whileTap={{ scale: 0.8 }}
             style={{ x: 100 }}
           >
-            <Link href="https://www.instagram.com/piaicofficial/?hl=en"><InstaIcon></InstaIcon></Link>
+            <Link  target="_blank" href="https://www.instagram.com/piaicofficial/?hl=en"><InstaIcon></InstaIcon></Link>
             
           </motion.div>
           </Stack>
@@ -44,7 +44,7 @@ export default function SocialMediaIcons(){
             whileTap={{ scale: 0.8 }}
             style={{ x: 100 }}
           >
-            <Link href="https://www.youtube.com/@panaverse/streams"><YoutubeIcon></YoutubeIcon></Link>
+            <Link  target="_blank" href="https://www.youtube.com/@panaverse/streams"><YoutubeIcon></YoutubeIcon></Link>
             
           </motion.div>
 
@@ -53,7 +53,7 @@ export default function SocialMediaIcons(){
             whileTap={{ scale: 0.8 }}
             style={{ x: 100 }}
           >
-            <Link href="https://www.linkedin.com/company/panaverse/?original_referer=https%3A%2F%2Fwww.google.com%2F"> <LinkedinIcon></LinkedinIcon></Link>
+            <Link  target="_blank" href="https://www.linkedin.com/company/panaverse/?original_referer=https%3A%2F%2Fwww.google.com%2F"> <LinkedinIcon></LinkedinIcon></Link>
             
           </motion.div>
 
@@ -63,7 +63,7 @@ export default function SocialMediaIcons(){
             style={{ x: 100 }}
             
           >
-            <Link  href="https://github.com/panaverse"><GithubIcon></GithubIcon></Link>
+            <Link  target="_blank" href="https://github.com/panaverse"><GithubIcon></GithubIcon></Link>
           </motion.div>
          </Stack>
         </Stack>
