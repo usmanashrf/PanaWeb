@@ -198,8 +198,8 @@ export default function NavBar() {
                     </MenuList>
                   </Menu>
                 </Flex>
-                <MenuItem icon={<Image src={useColorModeValue("/homeIcon.png","/homeIconW.png")}></Image>}><Link href="/">Home</Link></MenuItem>
-                <MenuItem icon={<Image src={useColorModeValue("/teams.png","/teamsW.png")}></Image>}><Link href="/Team">Team</Link></MenuItem>
+                <MenuItem onClick={()=>{router.push('/')}}icon={<Image src={useColorModeValue("/homeIcon.png","/homeIconW.png")}></Image>}>Home</MenuItem>
+                <MenuItem onClick={()=>{router.push('/Team')}} icon={<Image src={useColorModeValue("/teams.png","/teamsW.png")}></Image>}>Team</MenuItem>
                 <MenuItem onClick={()=>{router.push('/about')}} icon={<InfoIcon />}>About</MenuItem>
                 <MenuItem
                   onClick={toggleColorMode}

@@ -103,7 +103,7 @@ export default function FrontPage(){
               </motion.div>
             </VStack>
             <Flex pl={["20px","0px","0px"]} alignSelf={"flex-end"}>  <Stat >
-    <StatLabel textColor={"blue.700"}>Members</StatLabel>
+    <StatLabel textColor={useColorModeValue("blue.600","blue.200")}>Members</StatLabel>
     <StatNumber fontSize={["16px","18px","26px"]}>3500+</StatNumber>
     <StatHelpText fontSize={["12px","16px"]}>
       <StatArrow type='increase' />

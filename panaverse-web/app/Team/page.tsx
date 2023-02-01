@@ -14,7 +14,7 @@ export default function Team(){
         <Box my="40px" mb="80px" alignItems={"center"} >
     
           <Flex direction={["column","column","row"]} >
-          <Grid templateColumns='repeat(3, 1fr)' gap={4}>
+          <Grid templateColumns={['repeat(1, 1fr)','repeat(2, 1fr)','repeat(3, 1fr)']} gap={4}>
           <GridItem w='100%'>
           <motion.nav variants={qtr1Variants} initial="hidden" whileInView="show">
           <Card
