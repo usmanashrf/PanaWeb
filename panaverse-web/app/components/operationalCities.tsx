@@ -28,7 +28,7 @@ export default function Cities() {
         </motion.nav>
     
       <VStack alignItems="left"  direction={"row"}>
-      <Grid  templateColumns='repeat(2, 1fr)' gap={[2,4,6]}>
+      <Grid  templateColumns='repeat(2, 1fr)' gap={[6]}>
   <GridItem w='100%'>
   <motion.nav variants={cardsVariants} initial="hidden" whileInView="show">
 <Card

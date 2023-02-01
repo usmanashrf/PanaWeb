@@ -102,10 +102,10 @@ export default function FrontPage(){
                 </Button>
               </motion.div>
             </VStack>
-            <Flex alignSelf={"flex-end"}>  <Stat >
-    <StatLabel>Members</StatLabel>
-    <StatNumber>3500+</StatNumber>
-    <StatHelpText>
+            <Flex pl={["20px","0px","0px"]} alignSelf={"flex-end"}>  <Stat >
+    <StatLabel textColor={"blue.700"}>Members</StatLabel>
+    <StatNumber fontSize={["16px","18px","26px"]}>3500+</StatNumber>
+    <StatHelpText fontSize={["12px","16px"]}>
       <StatArrow type='increase' />
       53.36%
     </StatHelpText>
