@@ -88,7 +88,6 @@ export default function FrontPage(){
                 whileTap={{ scale: 0.8 }}
                 style={{ x: 110 }}
               >
-                
                 <Button
                   ml={["-160px", "-160px", "-200px"]}
                   mt={["5px","5px","20px"]}

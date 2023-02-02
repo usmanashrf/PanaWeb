@@ -8,7 +8,7 @@ export default function Metaverse(){
       <Box my="100px">
         <Flex direction={["column","column","row"]}>
        
-            <Image ml={"-50px"} src="/metaverse.png"></Image>
+            <Image ml={["0px","-30px","-50px"]} src="/metaverse.png"></Image>
             <VStack >
             <motion.nav variants={introVariants} initial="hidden" whileInView="show">
             <Text px={"10px"} fontSize={["20px","35px","45px"]} textColor={useColorModeValue("blue.600", "blue.300")} fontWeight="bold">
