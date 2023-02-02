@@ -18,7 +18,6 @@ export default function Home() {
       <ChakraProvider cssVarsRoot={undefined} theme={theme}>
        <NavBar></NavBar>
        <FrontPage></FrontPage>
-       
        <Intro></Intro>
        <Divider />   
        <Metaverse></Metaverse>
