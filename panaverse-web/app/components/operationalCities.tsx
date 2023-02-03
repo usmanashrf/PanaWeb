@@ -17,7 +17,7 @@ import {
   useColorModeValue
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import { cardsVariants, navVariants } from "../utils/motions";
+import { cardsVariants, mapVariants,navVariants } from "../utils/motions";
 
 export default function Cities() {
   return (
@@ -41,9 +41,10 @@ export default function Cities() {
         </Text>
       </motion.nav>
       <Flex direction={["column","column","row"]}>
+
       <Image src="/pakistanMap.png"></Image>
 
-        <VStack mx="20px"  direction={"row"}>
+        <VStack mx="10px"  direction={"row"}>
           <Grid templateColumns={["repeat(1, 1fr)"]} gap={[4]}>
             <GridItem w="100%">
               <motion.nav
@@ -163,6 +164,7 @@ export default function Cities() {
 
                   </Stack>
                 </Card>
+
               </motion.nav>
             </GridItem>
           </Grid>
